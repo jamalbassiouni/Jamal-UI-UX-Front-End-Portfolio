@@ -1,0 +1,1881 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- Page Title -->
+  <title>Jamal | UI/UX & Front-End Portfolio</title>
+
+  <!-- Viewport Meta-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- Template Styles Start -->
+  <link rel="stylesheet" href="css/loaders/loader.css" />
+  <link rel="stylesheet" type="text/css" href="css/plugins.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <!-- Template Styles End -->
+
+  <!-- Custom Browser Color Start -->
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#dcdce7" />
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111111" />
+  <meta name="msapplication-navbutton-color" content="#111111" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <!-- Custom Browser Color End -->
+</head>
+
+<body>
+  <!-- <div id="popup" class="popup">
+    <div class="popup-content">
+      <p>اضغط على F11 لتتمتع بمشاهدة عالية.</p>
+    </div>
+  </div>
+   -->
+
+  <div class="cursor"></div>
+
+  <div id="loader" class="loader">
+    <div id="loaderContent" class="loader__content">
+      <div class="loader__shadow"></div>
+      <div class="loader__box"></div>
+    </div>
+  </div>
+
+  <header id="header" class="header d-flex">
+    <div class="header__navigation">
+      <nav id="menu" class="menu">
+        <ul class="menu__list d-flex justify-content-start">
+          <li class="menu__item">
+            <a class="menu__link btn" href="#about">
+              <span class="menu__caption">About Me</span>
+              <i class="ph-bold ph-user"></i>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link btn" href="#services">
+              <span class="menu__caption">Services</span>
+              <i class="ph-bold ph-squares-four"></i>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link btn" href="#portfolio">
+              <span class="menu__caption">Portfolio</span>
+              <i class="fa-regular fa-folder-open"></i>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link btn" href="#resume">
+              <span class="menu__caption">Resume</span>
+              <i class="fa-regular fa-newspaper"></i>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link btn" href="#explore">
+              <span class="menu__caption">Explore</span>
+              <i class="fa-regular fa-compass"></i>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link btn" href="#contact">
+              <span class="menu__caption">Contact</span>
+              <i class="fa-regular fa-address-card"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header__controls d-flex justify-content-end">
+      <button id="color-switcher" class="color-switcher header__switcher btn" type="button" role="switch"
+        aria-label="light/dark mode" aria-checked="true"></button>
+      <a id="notify-trigger" class="header__trigger btn"
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=jamalbassiounifreelancehub@gmail.com" target="_blank">
+        <span class="trigger__caption">Email Me</span>
+        <i class="ph-bold ph-chat-dots"></i>
+      </a>
+    </div>
+  </header>
+
+  <div class="gradient-background">
+    <div class="blur"></div>
+    <div class="blur"></div>
+    <div class="blur"></div>
+  </div>
+
+  <aside id="avatar" class="avatar">
+    <div class="avatar__container d-flex flex-column justify-content-lg-between">
+      <div class="avatar__block">
+        <div class="avatar__logo d-flex align-items-center">
+          <figure class="logo__image">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="85px" height="85px" viewBox="0 0 85 85"
+              style="enable-background: new 0 0 85 85" class="gradient-fill">
+              <style type="text/css">
+                .gradient-fill {
+                  fill: url(#gradientFill);
+                }
+              </style>
+              <g>
+                <linearGradient id="gradientFill" gradientUnits="userSpaceOnUse" x1="9.9604" y1="75.0338" x2="75.0387"
+                  y2="9.9555">
+                  <stop offset="0" style="stop-color: var(--accent)" />
+                  <stop offset="1" style="stop-color: var(--secondary)" />
+                </linearGradient>
+                <path class="gradient-fill" d="M51,0H34C15.2,0,0,15.2,0,34v17c0,14.3,8.9,26.6,21.4,31.6c0,0,0,0,0,0l0,0C25.3,84.1,29.5,85,34,85h17
+                    c6,0,11.7-1.6,16.6-4.3c0.1-0.1,0.2-0.1,0.3-0.2C78.1,74.6,85,63.6,85,51V34C85,15.2,69.8,0,51,0z M83,51c0,10.7-5.3,20.2-13.4,26
+                    v-2.5v-3.9h3.9v-3.9h-3.9v-3.9h3.9v-3.9h-3.9H67v-3.9V51h-3.9v3.9v3.9h2.6v3.9v3.9v3.9h-3.9h-3.9v3.9h3.9h3.9v3.9v1
+                    C61.3,81.7,56.3,83,51,83H34c-4.5,0-8.7-0.9-12.6-2.6v-2v-3.9h3.9h3.9v-3.9h-3.9h-3.9v-3.9v-3.9v-3.9H24v-3.9V51h-3.9v3.9v3.9h-2.6
+                    h-3.9v3.9h3.9v3.9h-3.9v3.9h3.9v3.9v3.9C8.2,72.8,2,62.6,2,51V34C2,16.4,16.4,2,34,2h17c17.6,0,32,14.4,32,32V51z M50.1,54.9H54
+                    v3.9v3.9h-3.9v-3.9V54.9z M33.1,54.9H37v3.9v3.9h-3.9v-3.9V54.9z M27.9,51H24v-3.9v-3.9v-3.9h3.9v3.9v3.9V51z M31.8,39.3h-3.9v-3.9
+                    h3.9V39.3z M31.8,43.2v-3.9h3.9v3.9H31.8z M63.1,47.1V51h-3.9v-3.9v-3.9v-3.9h3.9v3.9V47.1z M35.7,47.1v-3.9h3.9h3.9h3.9h3.9v3.9
+                    h-3.9h-3.9h-3.9H35.7z M59.2,39.3h-3.9v-3.9h3.9V39.3z M55.3,43.2h-3.9v-3.9h3.9V43.2z" />
+              </g>
+            </svg>
+          </figure>
+          <div class="logo__caption">
+            <p>Jamal<br />Bassiouni</p>
+          </div>
+        </div>
+        <figure class="avatar__image">
+          <img data-src="img/avatars/Jamal Email (3).png" class="lazyload" alt="Jamal - Personal photo" />
+        </figure>
+      </div>
+      <div class="avatar__block">
+        <h6>
+          <small class="top">Specialization:</small>
+          UI/UX designer <br />
+          & Frontend developer
+        </h6>
+      </div>
+
+      <div class="avatar__block">
+        <div class="avatar__socials">
+          <ul class="socials-square d-flex justify-content-between">
+            <li class="socials-square__item">
+              <!-- <a class="socials-square__link btn" href="https://dribbble.com/" target="_blank"><i
+                  class="ph-bold ph-dribbble-logo"></i></a> -->
+              <div id="storyly-container"></div>
+            </li>
+            <li class="socials-square__item"></li>
+            <li class="socials-square__item">
+              <!-- <a class="socials-square__link btn" href="https://www.instagram.com/" target="_blank"><i
+                  class="ph-bold ph-instagram-logo"></i></a> -->
+            </li>
+            <li class="socials-square__item">
+              <!-- <a class="socials-square__link btn" href="https://www.twitch.tv/" target="_blank"><i
+                  class="ph-bold ph-twitch-logo"></i></a> -->
+            </li>
+            <li class="socials-square__item">
+              <!-- <a class="socials-square__link btn" href="https://www.pinterest.com/" target="_blank"><i -->
+              <!-- class="ph-bold ph-pinterest-logo"></i></a> -->
+            </li>
+          </ul>
+        </div>
+
+        <div class="avatar__btnholder">
+          <a class="btn btn-default btn-default-ws btn-fullwidth btn-hover btn-hover-accent"
+            href="https://tinyurl.com/jamal-uix-dev-wsb" target="_blank">
+            <span class="btn-caption">Connect on Whatsapp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main id="content" class="content">
+    <div class="content__wrapper">
+      <section id="main" class="main">
+        <header id="headline" class="headline d-flex align-items-start flex-column" data-speed="1">
+          <p class="headline__subtitle animate-headline">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13"
+              fill="currentColor">
+              <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                  C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                  C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z" />
+            </svg>
+            <span>Let's meet!</span>
+          </p>
+          <h1 class="headline__title animate-headline">
+            I'm Jamal Bassiouni<br />UI/UX designer & Frontend developer
+          </h1>
+          <div class="headline__btnholder d-flex flex-column flex-sm-row">
+            <a class="btn mobile-vertical btn-default btn-hover btn-hover-accent-mobile animate-headline"
+              href="https://tinyurl.com/Service-Personalization-Survey" target="_blank">
+              <span class="btn-caption">View Brief</span>
+              <i class="fa-regular fa-file-lines"></i>
+            </a>
+            <a class="btn mobile-vertical btn-default btn-hover btn-hover-outline-mobile animate-headline" href="#0">
+              <span class="btn-caption">Download CV</span>
+              <i class="ph-bold ph-download-simple"></i>
+            </a>
+          </div>
+        </header>
+
+        <div class="rotating-btn">
+          <a href="#portfolio" class="rotating-btn__link slide-down">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" style="enable-background: new 0 0 120 120"
+              xml:space="preserve" class="animate-rotation" data-value="430">
+              <defs>
+                <path id="textPath"
+                  d="M110,59.5c0,27.6-22.4,50-50,50s-50-22.4-50-50s22.4-50,50-50S110,31.9,110,59.5z" />
+              </defs>
+              <g>
+                <use xlink:href="#textPath" fill="none"></use>
+                <text>
+                  <textPath xlink:href="#textPath">
+                    scroll for more * scroll for more *
+                  </textPath>
+                </text>
+              </g>
+            </svg>
+            <i class="ph-bold ph-arrow-down"></i>
+          </a>
+        </div>
+      </section>
+
+      <section id="about" class="inner">
+        <header class="content__block section-grid-title">
+          <p class="h2__subtitle animate-in-up">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13"
+              fill="currentColor">
+              <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                          C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                          C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z" />
+            </svg>
+            <span>About Me</span>
+          </p>
+          <h2 class="h2__title animate-in-up">
+            Turning ideas into creative designs & websites
+          </h2>
+        </header>
+
+        <div class="content__block grid-block">
+          <div class="achievements d-flex flex-column flex-md-row align-items-md-stretch">
+            <div class="achievements__item d-flex flex-column grid-item animate-card-3">
+              <div class="achievements__card">
+                <p class="achievements__number move" data-Time="10">0</p>
+                <p class="achievements__descr">Projects done</p>
+              </div>
+            </div>
+
+            <div class="achievements__item d-flex flex-column grid-item animate-card-3">
+              <div class="achievements__card">
+                <p class="achievements__number move" data-Time="3">0</p>
+                <p class="achievements__descr">Years of experience</p>
+              </div>
+            </div>
+
+            <div class="achievements__item d-flex flex-column grid-item animate-card-3">
+              <div class="achievements__card">
+                <p class="achievements__number move" data-Time="6">0</p>
+                <p class="achievements__descr">Happy clients</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__block grid-block">
+          <div class="container-fluid p-0">
+            <div class="row g-0 justify-content-between">
+              <div class="col-12 col-xl-8 grid-item about-descr">
+                <p class="about-descr__text animate-in-up">
+                  Since the start of my journey, I’ve been passionate about
+                  turning ideas into innovative digital experiences. As a
+                  mobile and web designer and front-end developer, I’ve
+                  created projects that balance creativity and performance to
+                  effectively meet client needs.
+                </p>
+                <p class="about-descr__text animate-in-up">
+                  I focus on delivering solutions that combine attractive,
+                  responsive design with precise development to ensure an
+                  exceptional user experience. Due to my experience, I create
+                  practical, impactful projects, paying attention to every
+                  detail to maximize results.
+                </p>
+                <div class="btn-group about-descr__btnholder animate-in-up">
+                  <a class="btn mobile-vertical btn-default btn-hover btn-hover-accent" href="" download="">
+                    <span class="btn-caption">Download CV</span>
+                    <i class="ph-bold ph-download-simple"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-12 col-xl-4 grid-item about-info">
+                <div class="about-info__item animate-in-up">
+                  <h6>
+                    <small class="top">Name</small>
+                    Jamal Bassiouni
+                  </h6>
+                </div>
+                <div class="about-info__item animate-in-up">
+                  <h6>
+                    <small class="top">Phone</small>
+                    <a class="text-link" href="https://tinyurl.com/jamal-uix-dev-wsb" target="_blank">+20 103 229 8622
+                    </a>
+                  </h6>
+                </div>
+                <div class="about-info__item animate-in-up">
+                  <h6>
+                    <small class="top">Available for:</small>
+                    <span href="#">(Full/Part-Time) work </span>
+                  </h6>
+                </div>
+                <div class="about-info__item animate-in-up">
+                  <h6>
+                    <small class="top">Location</small>
+                    <span>Alexandria, Egypt</span>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="inner">
+        <header class="content__block section-grid-title">
+          <p class="h2__subtitle animate-in-up">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13"
+              fill="currentColor">
+              <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                          C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                          C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z" />
+            </svg>
+            <span>Services</span>
+          </p>
+          <h2 class="h2__title animate-in-up">
+            Innovative solutions tailored to clients' needs
+          </h2>
+        </header>
+
+        <div class="content__block grid-block">
+          <div class="container-fluid p-0">
+            <div class="row g-0 align-items-stretch cards">
+              <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                <div class="cards__card d-flex flex-column">
+                  <div class="cards__descr">
+                    <h4 class="cards__title animate-in-up">
+                      Front-End<br />development
+                    </h4>
+                    <div class="cards__tags d-flex flex-wrap animate-in-up">
+                      <span class="rounded-tag tag-outline">SEO & Performance</span>
+                      <span class="rounded-tag tag-outline">API Integration</span>
+                      <span class="rounded-tag tag-outline">Interactive Animations</span>
+                      <span class="rounded-tag tag-outline">Cross-Browser Compatibility</span>
+                    </div>
+                    <p class="small cards__text animate-in-up">
+                      Building fast, dynamic UIs with React & Next.js.
+                    </p>
+                  </div>
+                  <figure class="cards__image d-flex animate-in-up">
+                    <img data-src="img/services/front-end.webp" class="lazyload"
+                      alt="Front-End Service/Features Image" />
+                  </figure>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 cards__item grid-item animate-card-2">
+                <div class="cards__card d-flex flex-column">
+                  <div class="cards__descr">
+                    <h4 class="cards__title animate-in-up">
+                      UI/UX<br />Design
+                    </h4>
+                    <div class="cards__tags d-flex flex-wrap animate-in-up">
+                      <span class="rounded-tag tag-outline">User Research</span>
+                      <span class="rounded-tag tag-outline">Wireframe</span>
+                      <span class="rounded-tag tag-outline">Prototype</span>
+                      <span class="rounded-tag tag-outline">Content Structuring</span>
+                      <span class="rounded-tag tag-outline">Responsive Design</span>
+                      <span class="rounded-tag tag-outline">Brand Identity</span>
+                    </div>
+                    <p class="small cards__text animate-in-up">
+                      Creating sleek, user designs with Figma & Adobe XD.
+                    </p>
+                  </div>
+                  <figure class="cards__image d-flex animate-in-up scroll">
+                    <img data-src="img/services/ui-ux.webp" class="lazyload" alt="UI/UX Service/Features Image" />
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="inner">
+        <header class="content__block section-grid-title">
+          <p class="h2__subtitle animate-in-up">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13"
+              fill="currentColor">
+              <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z" />
+            </svg>
+            <span>Portfolio</span>
+          </p>
+          <h2 class="h2__title animate-in-up">
+            Check out my featured projects
+          </h2>
+        </header>
+
+        <div class="content__block grid-block">
+          <div class="container-fluid px-0 inner__gallery">
+            <div class="row gx-0 my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+              <figure class="col-12 col-md-4 gallery__item grid-item animate-card-2" itemprop="associatedMedia"
+                itemscope itemtype="http://schema.org/ImageObject">
+                <a id="project-isometric-houseff" href="img/works/1400x1400_w01.webp"
+                  data-image="img/works/1400x1400_w01.webp" class="gallery__link" itemprop="contentUrl"
+                  data-size="1400x1400">
+                  <img data-src="img/works/800_w01-thumb.webp" class="gallery__image lazyload" itemprop="thumbnail"
+                    alt="Image description" />
+                </a>
+                <figcaption class="gallery__descr" itemprop="caption description">
+                  <h5>Isometric House</h5>
+                  <div class="card__tags d-flex flex-wrap">
+                    <span class="rounded-tag opposite">Illustrations</span>
+                    <span class="rounded-tag opposite">3D Render</span>
+                  </div>
+                  <p class="small">
+                    Mauris porttitor lobortis ligula, quis molestie lorem
+                    scelerisque eu. Morbi aliquam enim odio.
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure class="col-12 col-md-4 gallery__item grid-item animate-card-2" itemprop="associatedMedia"
+                itemscope itemtype="http://schema.org/ImageObject">
+                <a id="project-isometric-houseff" href="img/works/1400x1400_w01.webp"
+                  data-image="img/works/1400x1400_w01.webp" class="gallery__link" itemprop="contentUrl"
+                  data-size="1400x1400">
+                  <img data-src="img/works/800_w01-thumb.webp" class="gallery__image lazyload" itemprop="thumbnail"
+                    alt="Image description" />
+                </a>
+                <figcaption class="gallery__descr" itemprop="caption description">
+                  <h5>Isometric House</h5>
+                  <div class="card__tags d-flex flex-wrap">
+                    <span class="rounded-tag opposite">Illustrations</span>
+                    <span class="rounded-tag opposite">3D Render</span>
+                  </div>
+                  <p class="small">
+                    Mauris porttitor lobortis ligula, quis molestie lorem
+                    scelerisque eu. Morbi aliquam enim odio.
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure class="col-12 col-md-4 gallery__item grid-item animate-card-2" itemprop="associatedMedia"
+                itemscope itemtype="http://schema.org/ImageObject">
+                <a id="project-isometric-houseff" href="img/works/1400x1400_w01.webp"
+                  data-image="img/works/1400x1400_w01.webp" class="gallery__link" itemprop="contentUrl"
+                  data-size="1400x1400">
+                  <img data-src="img/works/800_w01-thumb.webp" class="gallery__image lazyload" itemprop="thumbnail"
+                    alt="Image description" />
+                </a>
+                <figcaption class="gallery__descr" itemprop="caption description">
+                  <h5>Isometric House</h5>
+                  <div class="card__tags d-flex flex-wrap">
+                    <span class="rounded-tag opposite">Illustrations</span>
+                    <span class="rounded-tag opposite">3D Render</span>
+                  </div>
+                  <p class="small">
+                    Mauris porttitor lobortis ligula, quis molestie lorem
+                    scelerisque eu. Morbi aliquam enim odio.
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure class="col-12 col-md-4 gallery__item grid-item animate-card-2" itemprop="associatedMedia"
+                itemscope itemtype="http://schema.org/ImageObject">
+                <a id="project-isometric-houses" href="img/works/1400x1400_w02.webp"
+                  data-image="img/works/800_w02-thumb.webp" class="gallery__link" itemprop="contentUrl"
+                  data-size="1400x1400">
+                  <img data-src="img/works/800_w02-thumb.webp" class="gallery__image lazyload" itemprop="thumbnail"
+                    alt="Image description" />
+                </a>
+                <figcaption class="gallery__descr opposite" itemprop="caption description">
+                  <h5 class="opposite">Dashboard Template</h5>
+                  <div class="card__tags d-flex flex-wrap">
+                    <span class="rounded-tag">UI Design</span>
+                    <span class="rounded-tag">Figma</span>
+                  </div>
+                  <p class="small">
+                    Mauris porttitor lobortis ligula, quis molestie lorem
+                    scelerisque eu. Morbi aliquam enim odio, a mollis ipsum
+                    tristique eu.
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure class="col-12 col-md-4 gallery__item grid-item animate-card-2" itemprop="associatedMedia"
+                itemscope itemtype="http://schema.org/ImageObject">
+                <a id="project-isometric-house" href="img/works/1400x1400_w03.webp"
+                  data-image="img/works/800_w03-thumb.webp" class="gallery__link" itemprop="contentUrl"
+                  data-size="1400x1400">
+                  <img data-src="img/works/800_w03-thumb.webp" class="gallery__image lazyload" itemprop="thumbnail"
+                    alt="Image description" />
+                </a>
+                <figcaption class="gallery__descr opposite" itemprop="caption description">
+                  <h5 class="opposite">Notification Icon</h5>
+                  <div class="card__tags d-flex flex-wrap">
+                    <span class="rounded-tag">Illustrations</span>
+                    <span class="rounded-tag">3D Render</span>
+                  </div>
+                  <p class="small">
+                    Mauris porttitor lobortis ligula, quis molestie lorem
+                    scelerisque eu. Morbi aliquam enim odio, a mollis ipsum
+                    tristique eu.
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure class="col-12 col-md-4 gallery__item grid-item animate-card-2" itemprop="associatedMedia"
+                itemscope itemtype="http://schema.org/ImageObject">
+                <a id="project-isometric-house" href="img/works/1400x1400_w04.webp"
+                  data-image="img/works/800_w04-thumb.webp" class="gallery__link" itemprop="contentUrl"
+                  data-size="1400x1400">
+                  <img data-src="img/works/800_w04-thumb.webp" class="gallery__image lazyload" itemprop="thumbnail"
+                    alt="Image description" />
+                </a>
+                <figcaption class="gallery__descr" itemprop="caption description">
+                  <h5>Smart Penguin</h5>
+                  <div class="card__tags d-flex flex-wrap">
+                    <span class="rounded-tag opposite">Illustrations</span>
+                    <span class="rounded-tag opposite">AI Experiment</span>
+                  </div>
+                  <p class="small">
+                    Mauris porttitor lobortis ligula, quis molestie lorem
+                    scelerisque eu. Morbi aliquam enim odio, a mollis ipsum
+                    tristique eu.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="inner">
+        <header class="content__block section-resume-title">
+          <p class="h2__subtitle animate-in-up">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13"
+              fill="currentColor">
+              <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                    C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                    C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z" />
+            </svg>
+            <span>Resume</span>
+          </p>
+          <h2 class="h2__title animate-in-up">
+            Mastering skills through learning, tools & practice
+          </h2>
+        </header>
+
+        <div class="content__block block-large">
+          <div class="section-h3">
+            <h3 class="h3__title animate-in-up">My courses</h3>
+          </div>
+
+          <div class="container-fluid p-0 resume-lines">
+            <div class="row g-0 resume-lines__item animate-card-2">
+              <div class="col-xxl-2">
+                <span class="resume-lines__date animate-in-up">2023</span>
+              </div>
+              <div class="col-xxl-5">
+                <h5 class="resume-lines__title animate-in-up">
+                  UI/UX Design Mastery
+                </h5>
+                <p class="resume-lines__source animate-in-up">
+                  Course by
+                  <a href="https://depi.gov.eg/" class="text-link-bold" target="_blank">Egypt's Digital Pioneers
+                    Initiative</a>
+                </p>
+              </div>
+              <div class="col-xxl-5">
+                <p class="small resume-lines__descr animate-in-up">
+                  Specializes in site maps, user flows, visual hierarchy and
+                  graphic design principles.
+                </p>
+              </div>
+            </div>
+
+            <div class="row g-0 resume-lines__item animate-card-2">
+              <div class="col-xxl-2">
+                <span class="resume-lines__date animate-in-up">2023</span>
+              </div>
+              <div class="col-xxl-5">
+                <h5 class="resume-lines__title animate-in-up">
+                  UX Design Essentials
+                </h5>
+                <p class="resume-lines__source animate-in-up">
+                  Course by
+                  <a href="https://maharatech.gov.eg/course/view.php?id=1231&lang=en" class="text-link-bold"
+                    target="_blank">Mahara Tech, an ITI Initiative</a>
+                </p>
+              </div>
+              <div class="col-xxl-5">
+                <p class="small resume-lines__descr animate-in-up">
+                  Focuses on the basics, including project scoping,
+                  requirements analysis, research.
+                </p>
+              </div>
+            </div>
+
+            <div class="row g-0 resume-lines__item animate-card-2">
+              <div class="col-xxl-2">
+                <span class="resume-lines__date animate-in-up">2021</span>
+              </div>
+              <div class="col-xxl-5">
+                <h5 class="resume-lines__title animate-in-up">
+                  Front-End Mastery
+                </h5>
+                <p class="resume-lines__source animate-in-up">
+                  Course by
+                  <a href="https://www.linkedin.com/company/routeacademy/posts/?feedView=all" class="text-link-bold"
+                    target="_blank">Route Academy</a>
+                </p>
+              </div>
+              <div class="col-xxl-5">
+                <p class="small resume-lines__descr animate-in-up">
+                  Specializes in React, Next.js, and main libraries for
+                  building web apps.
+                </p>
+              </div>
+            </div>
+
+            <div class="row g-0 resume-lines__item animate-card-2">
+              <div class="col-xxl-2">
+                <span class="resume-lines__date animate-in-up">2020</span>
+              </div>
+              <div class="col-xxl-5">
+                <h5 class="resume-lines__title animate-in-up">
+                  Front-End Essentials
+                </h5>
+                <p class="resume-lines__source animate-in-up">
+                  Course by
+                  <a href="https://maharatech.gov.eg/course/index.php?categoryid=13" class="text-link-bold"
+                    target="_blank">Mahara Tech, an ITI Initiative</a>
+                </p>
+              </div>
+              <div class="col-xxl-5">
+                <p class="small resume-lines__descr animate-in-up">
+                  Focuses on HTML, CSS, and JavaScript to create responsive,
+                  user-friendly websites.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__block">
+          <div class="section-h3 section-h3-grid">
+            <h3 class="h3__title animate-in-up">My favorite tools</h3>
+          </div>
+        </div>
+
+        <div class="content__block grid-block">
+          <div class="tools-cards d-flex justify-content-start flex-wrap">
+            <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+              <figure class="tools-cards__card">
+                <img class="tools-cards__icon animate-in-up lazyload" data-src="img/icons/figma.svg" alt="Figma Icon" />
+                <h6 class="tools-cards__caption animate-in-up">Figma</h6>
+              </figure>
+            </div>
+
+            <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+              <figure class="tools-cards__card">
+                <img class="tools-cards__icon animate-in-up lazyload" data-src="img/icons/adobe-xd.svg"
+                  alt="Adobe XD Icon" />
+                <h6 class="tools-cards__caption animate-in-up">Adobe XD</h6>
+              </figure>
+            </div>
+
+            <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+              <figure class="tools-cards__card">
+                <img class="tools-cards__icon animate-in-up lazyload" data-src="img/icons/photoshop.svg"
+                  alt="Photoshop Icon" />
+                <h6 class="tools-cards__caption animate-in-up">Photoshop</h6>
+              </figure>
+            </div>
+
+            <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+              <figure class="tools-cards__card">
+                <img class="tools-cards__icon animate-in-up lazyload" data-src="img/icons/illustrator.svg"
+                  alt="Illustrator Icon" />
+                <h6 class="tools-cards__caption animate-in-up">
+                  Illustrator
+                </h6>
+              </figure>
+            </div>
+
+            <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+              <figure class="tools-cards__card">
+                <img class="tools-cards__icon animate-in-up lazyload" data-src="img/icons/zeplin.svg"
+                  alt="zeplin Icon" />
+                <h6 class="tools-cards__caption animate-in-up">zeplin</h6>
+              </figure>
+            </div>
+
+            <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+              <figure class="tools-cards__card">
+                <img class="tools-cards__icon animate-in-up lazyload" data-src="img/icons/html.svg" alt="HTML5 Icon" />
+                <h6 class="tools-cards__caption animate-in-up">HTML5</h6>
+              </figure>
+            </div>
+
+            <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+              <figure class="tools-cards__card">
+                <img class="tools-cards__icon animate-in-up lazyload" data-src="img/icons/css.svg" alt="CSS3 Icon" />
+                <h6 class="tools-cards__caption animate-in-up">CSS3</h6>
+              </figure>
+            </div>
+
+            <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+              <figure class="tools-cards__card">
+                <img class="tools-cards__icon animate-in-up lazyload" data-src="img/icons/javascript.svg"
+                  alt="JavaScript Icon" />
+                <h6 class="tools-cards__caption animate-in-up">JavaScript</h6>
+              </figure>
+            </div>
+
+            <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+              <figure class="tools-cards__card">
+                <img class="tools-cards__icon animate-in-up lazyload" data-src="img/icons/react.svg" alt="React Icon" />
+                <h6 class="tools-cards__caption animate-in-up">React</h6>
+              </figure>
+            </div>
+
+            <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+              <figure class="tools-cards__card">
+                <img class="tools-cards__icon animate-in-up lazyload" data-src="img/icons/next-js.svg"
+                  alt="Next.js Icon" />
+                <h6 class="tools-cards__caption animate-in-up">Next.js</h6>
+              </figure>
+            </div>
+
+            <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+              <figure class="tools-cards__card">
+                <img class="tools-cards__icon animate-in-up lazyload" data-src="img/icons/bootstrap.svg"
+                  alt="Bootstrap Icon" />
+                <h6 class="tools-cards__caption animate-in-up">Bootstrap</h6>
+              </figure>
+            </div>
+
+            <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+              <figure class="tools-cards__card">
+                <img class="tools-cards__icon animate-in-up lazyload" data-src="img/icons/tailwind-css.svg"
+                  alt="Tailwind Icon" />
+                <h6 class="tools-cards__caption animate-in-up">Tailwind</h6>
+              </figure>
+            </div>
+
+            <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+              <figure class="tools-cards__card">
+                <img class="tools-cards__icon animate-in-up lazyload" data-src="img/icons/github.svg"
+                  alt="GitHub Icon" />
+                <h6 class="tools-cards__caption animate-in-up">GitHub</h6>
+              </figure>
+            </div>
+
+            <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+              <figure class="tools-cards__card">
+                <img class="tools-cards__icon animate-in-up lazyload" data-src="img/icons/vs-code.svg"
+                  alt="VS Code Icon" />
+                <h6 class="tools-cards__caption animate-in-up">VS Code</h6>
+              </figure>
+            </div>
+
+            <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+              <figure class="tools-cards__card">
+                <img class="tools-cards__icon animate-in-up lazyload" data-src="img/icons/trello.svg"
+                  alt="Trello Icon" />
+                <h6 class="tools-cards__caption animate-in-up">Trello</h6>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="explore" class="inner">
+        <header class="content__block section-title">
+          <p class="h2__subtitle animate-in-up">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13"
+              fill="currentColor">
+              <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+          C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+          C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z" />
+            </svg>
+            <span>Blogs</span>
+          </p>
+          <h2 class="h2__title animate-in-up">Discover insights & updates</h2>
+        </header>
+
+        <div class="content__block block-large">
+          <div class="testimonials-slider">
+            <div class="swiper-blog">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide animate-card-2">
+                  <div class="blog-card">
+                    <figure class="animate-card-2">
+                      <img data-src="./img/blogs/mistakes.webp" class="lazyload" alt="UI/UX mistakes & fixes" />
+                    </figure>
+                    <div class="blog-card__descr">
+                      <h6 class="animate-in-up">Design Flaws</h6>
+                      <p class="animate-in-up">
+                        UI/UX Mistakes That Harm Experience (Fixes!).
+                      </p>
+                      <div class="testimonials-card__btnholder animate-in-up">
+                        <a href="./pages/blogs/ui-ux-mistakes.html"
+                          class="btn mobile-vertical btn-line btn-transparent slide-right details-button"
+                          target="_blank">
+                          <span class="btn-caption">Read More</span>
+                          <i class="ph-bold ph-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide animate-card-2">
+                  <div class="blog-card">
+                    <figure class="animate-card-2">
+                      <img data-src="./img/blogs/decisions.webp" class="lazyload" alt="UI/UX impact on decisions" />
+                    </figure>
+                    <div class="blog-card__descr">
+                      <h6 class="animate-in-up">User Psychology</h6>
+                      <p class="animate-in-up">
+                        The impact of (UI) & (UX) on user decisions.
+                      </p>
+                      <div class="testimonials-card__btnholder animate-in-up">
+                        <a href="./pages/blogs/ui-ux-impact.html"
+                          class="btn mobile-vertical btn-line btn-transparent slide-right details-button"
+                          target="_blank">
+                          <span class="btn-caption">Read More</span>
+                          <i class="ph-bold ph-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide animate-card-2">
+                  <div class="blog-card">
+                    <figure class="animate-card-2">
+                      <img data-src="./img/blogs/seo.webp" class="lazyload" alt="SEO techniques for ranking" />
+                    </figure>
+                    <div class="blog-card__descr">
+                      <h6 class="animate-in-up">SEO Hacks</h6>
+                      <p class="animate-in-up">
+                        Effective techniques to optimize your site's SEO.
+                      </p>
+                      <div class="testimonials-card__btnholder animate-in-up">
+                        <a href="./pages/blogs/seo-for-websites.html"
+                          class="btn mobile-vertical btn-line btn-transparent slide-right details-button"
+                          target="_blank">
+                          <span class="btn-caption">Read More</span>
+                          <i class="ph-bold ph-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide animate-card-2">
+                  <div class="blog-card">
+                    <figure class="animate-card-2">
+                      <img data-src="./img/blogs/react-vs-next.webp" class="lazyload" alt="React vs Next.js 2025" />
+                    </figure>
+                    <div class="blog-card__descr">
+                      <h6 class="animate-in-up">Framework Battle</h6>
+                      <p class="animate-in-up">
+                        React vs Next.js: Best choice for 2025?
+                      </p>
+                      <div class="testimonials-card__btnholder animate-in-up">
+                        <a href="./pages/blogs/react-vs-nextjs.html"
+                          class="btn mobile-vertical btn-line btn-transparent slide-right details-button"
+                          target="_blank">
+                          <span class="btn-caption">Read More</span>
+                          <i class="ph-bold ph-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev mxd-slider-btn-square mxd-slider-btn-square-prev animate-in-up">
+                <a class="btn btn-square btn-square-s btn-outline slide-left">
+                  <i class="ph-bold ph-caret-left"></i>
+                </a>
+              </div>
+
+              <div class="swiper-pagination"></div>
+
+              <div class="swiper-button-next mxd-slider-btn-square mxd-slider-btn-square-next animate-in-up">
+                <a class="btn btn-square btn-square-s btn-outline slide-right">
+                  <i class="ph-bold ph-caret-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="block-large">
+          <header class="content__block section-grid-title">
+            <p class="h2__subtitle animate-in-up">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13"
+                fill="currentColor">
+                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                    C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                    C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z" />
+              </svg>
+              <span>Packages</span>
+            </p>
+            <h2 class="h2__title animate-in-up">
+              Choose the plan that suits your project
+            </h2>
+            <p class="h2__text animate-in-up">
+              Select from three packages that combine design and development to suit your goals. Choose design-only from
+              $60, development-only from $50, or get the full experience with a complete package!
+            </p>
+          </header>
+
+          <div class="content__block-packages grid-block">
+            <div class="container-fluid p-0">
+              <div class="row g-0 align-items-stretch cards">
+                <div class="col-md-12 col-lg-6 col-xxl-4 grid-item-packages animate-card-2">
+                  <div class="cards__card d-flex flex-column">
+                    <div class="ribbon">
+                      <p class="ribbon--basic">Basic</p>
+                    </div>
+                    <div class="content__package">
+                      <h4>80$</h4>
+                      <p>
+                        Ideal for individuals and startups for simple
+                        websites.
+                      </p>
+                      <h6>
+                        Site Design & Features:
+                      </h6>
+                      <ul>
+                        <li>
+                          <i class="fa-regular fa-newspaper"></i>
+                          Includes 1 to 2 pages (e.g., landing page).
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-tablet-screen-button"></i>
+                          Responsive design with essential components.
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-microchip"></i>
+                          Building with HTML, CSS, and Figma.
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-wand-magic-sparkles"></i>
+                          Simple animation effects to enhance the experience.
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-screwdriver-wrench"></i>
+                          Basic search engine optimization and good loading speed.
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                          Only 3-reviews.
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-award"></i>
+                          7-day warranty after delivery.
+                        </li>
+                        <div class="border"></div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 col-lg-6 col-xxl-4 grid-item-packages animate-card-2">
+                  <div class="cards__card d-flex flex-column">
+                    <div class="ribbon">
+                      <p>Standard</p>
+                    </div>
+                    <div class="content__package">
+                      <h4>130$</h4>
+                      <p>Suitable for small businesses and entrepreneurs.</p>
+                      <h6>
+                        Site Design & Features:
+                      </h6>
+                      <ul>
+                        <li>
+                          <i class="fa-regular fa-newspaper"></i>
+                          Includes 3 to 4 professional-looking pages.
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-wand-magic-sparkles"></i>
+                          Interactive elements and smooth animations (e.g., sliders and forms).
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-microchip"></i>
+                          Advanced features such as: dark mode, form verification, and loading indicators, built with
+                          HTML, CSS, JS, and Figma.
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-screwdriver-wrench"></i>
+                          Advanced SEO optimizations and high loading speed.
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                          5-reviews available.
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-award"></i>
+                          14-day warranty after delivery.
+                        </li>
+                        <div class="border"></div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 col-lg-6 col-xxl-4 grid-item-packages animate-card-2">
+                  <div class="cards__card d-flex flex-column">
+                    <div class="ribbon">
+                      <p>Premium</p>
+                    </div>
+                    <div class="content__package">
+                      <h4>200$</h4>
+                      <p>
+                        Integrated for large companies or advanced projects.
+                      </p>
+                      <h6>
+                        Site Design & Features:
+                      </h6>
+                      <ul>
+                        <li>
+                          <i class="fa-regular fa-newspaper"></i>Pages based
+                          on project size.
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-wand-magic-sparkles"></i>   
+                          Customized design with smooth scroll and animation effects.
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-microchip"></i>
+                          Supports: multilingual, real-time validation, live chat, and API with JSX, SCSS,
+                          React/Next.js, and Figma.
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-screwdriver-wrench"></i>
+                          Optimized performance: lazy loading, WEBP & WOFF2 for smaller files, and full accessibility
+                          compliance.
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                          8-comprehensive reviews.
+                        </li>
+                        <li>
+                          <i class="fa-solid fa-award"></i>
+                          1-month warranty after delivery.
+                        </li>
+                        <div class="border"></div>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="block-large">
+          <header class="content__block section-title">
+            <p class="h2__subtitle animate-in-up">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13"
+                fill="currentColor">
+                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                        C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                        C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z" />
+              </svg>
+              <span>Testimonials</span>
+            </p>
+            <h2 class="h2__title animate-in-up">Clients say about me</h2>
+          </header>
+
+          <div class="content__block">
+            <div class="testimonials-slider">
+              <div class="swiper-testimonials">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="testimonials-card animate-in-up">
+                      <div class="testimonials-card__tauthor d-flex animate-in-up">
+                        <figure class="tauthor__avatar">
+                          <img data-src="./img/testimonials/james-carter.webp" class="lazyload"
+                            alt="James Carter Photo" />
+                        </figure>
+                        <div class="tauthor__info d-flex flex-column justify-content-center">
+                          <p class="tauthor__name">James Carter</p>
+                          <p class="tauthor__position">
+                            Head of Car Rental and Sales
+                          </p>
+                          <div class="tauthor__rating d-flex">
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonials-card__descr animate-in-up">
+                        <p>
+                          Jamal helped create a smooth and effortless Rideway
+                          experience by focusing on user journey mapping and
+                          engaging colors to meet customer needs for buying
+                          and renting cars. His teamwork ensured a reliable
+                          solution, maximizing efficiency with smart
+                          adjustments.
+                        </p>
+                      </div>
+                      <div class="testimonials-card__btnholder animate-in-up">
+                        <a class="btn mobile-vertical btn-line btn-transparent slide-right"
+                          href="#project-isometric-houseff">
+                          <span class="btn-caption">Project Page</span>
+                          <i class="ph-bold ph-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="testimonials-card animate-in-up">
+                      <div class="testimonials-card__tauthor d-flex animate-in-up">
+                        <figure class="tauthor__avatar">
+                          <img data-src="./img/testimonials/ahmed-al-masri.webp" class="lazyload"
+                            alt="Ahmed Al-Masri Photo" />
+                        </figure>
+                        <div class="tauthor__info d-flex flex-column justify-content-center">
+                          <p class="tauthor__name">Ahmed Al-Masri</p>
+                          <p class="tauthor__position">Software Developer</p>
+                          <div class="tauthor__rating d-flex">
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonials-card__descr animate-in-up">
+                        <p>
+                          His design blew me away! He’s great at mixing beauty
+                          with function, making the user experience easy and
+                          enjoyable. Navigating the app felt simple and clear.
+                          He also made car booking faster, more efficient, and
+                          hassle-free, with better flow, optimizing the app’s
+                          response.
+                        </p>
+                      </div>
+                      <div class="testimonials-card__btnholder animate-in-up">
+                        <a class="btn mobile-vertical btn-line btn-transparent slide-right"
+                          href="#project-isometric-houses">
+                          <span class="btn-caption">Project Page</span>
+                          <i class="ph-bold ph-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="testimonials-card animate-in-up">
+                      <div class="testimonials-card__tauthor d-flex animate-in-up">
+                        <figure class="tauthor__avatar">
+                          <img data-src="./img/testimonials/mike-johnson.webp" class="lazyload"
+                            alt="Mike Johnson Photo" />
+                        </figure>
+                        <div class="tauthor__info d-flex flex-column justify-content-center">
+                          <p class="tauthor__name">Mike Johnson</p>
+                          <p class="tauthor__position">
+                            Fitness Coach & Gym Owner
+                          </p>
+                          <div class="tauthor__rating d-flex">
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonials-card__descr animate-in-up">
+                        <p>
+                          Carefully crafting a seamless user experience for
+                          our Smart Home app, he perfectly aligned it with our
+                          specific needs. His attention to detail made the
+                          system highly efficient, enhancing automation,
+                          usability, and ensuring a superior experience for
+                          our target audience.
+                        </p>
+                      </div>
+                      <div class="testimonials-card__btnholder animate-in-up">
+                        <a class="btn mobile-vertical btn-line btn-transparent slide-right"
+                          href="#project-isometric-houses">
+                          <span class="btn-caption">Project Page</span>
+                          <i class="ph-bold ph-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="testimonials-card animate-in-up">
+                      <div class="testimonials-card__tauthor d-flex animate-in-up">
+                        <figure class="tauthor__avatar">
+                          <img data-src="./img/testimonials/michael-anderson.webp" class="lazyload"
+                            alt="Michael Anderson Photo" />
+                        </figure>
+                        <div class="tauthor__info d-flex flex-column justify-content-center">
+                          <p class="tauthor__name">Michael Anderson</p>
+                          <p class="tauthor__position">
+                            Owner of a Bakery Chain
+                          </p>
+                          <div class="tauthor__rating d-flex">
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonials-card__descr animate-in-up">
+                        <p>
+                          Jamal not only built the interface but also focused
+                          on performance optimization, making the web app
+                          faster and more efficient. This highlighted the
+                          app's purpose and boosted sales, reflecting his
+                          professionalism in executing the project. His work
+                          was outstanding.
+                        </p>
+                      </div>
+
+                      <div class="testimonials-card__btnholder animate-in-up">
+                        <a class="btn mobile-vertical btn-line btn-transparent slide-right"
+                          href="#project-isometric-houses">
+                          <span class="btn-caption">Project Page</span>
+                          <i class="ph-bold ph-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="testimonials-card animate-in-up">
+                      <div class="testimonials-card__tauthor d-flex animate-in-up">
+                        <figure class="tauthor__avatar">
+                          <img data-src="./img/testimonials/olivia-miller.webp" class="lazyload"
+                            alt="Olivia Miller Photo" />
+                        </figure>
+                        <div class="tauthor__info d-flex flex-column justify-content-center">
+                          <p class="tauthor__name">Olivia Miller</p>
+                          <p class="tauthor__position">CEO at King Young</p>
+                          <div class="tauthor__rating d-flex">
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonials-card__descr animate-in-up">
+                        <p>
+                          Always one step ahead, he not only met requirements
+                          but also suggested valuable improvements that made
+                          the page more dynamic and efficient. This boosted
+                          the page’s success and made our import/export
+                          website more effective. His strategic approach
+                          ensured scalability.
+                        </p>
+                      </div>
+
+                      <div class="testimonials-card__btnholder animate-in-up">
+                        <a class="btn mobile-vertical btn-line btn-transparent slide-right"
+                          href="#project-isometric-houses">
+                          <span class="btn-caption">Project Page</span>
+                          <i class="ph-bold ph-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="testimonials-card animate-in-up">
+                      <div class="testimonials-card__tauthor d-flex animate-in-up">
+                        <figure class="tauthor__avatar">
+                          <img data-src="./img/testimonials/jackson-lee.webp" class="lazyload"
+                            alt="Jackson Lee Photo" />
+                        </figure>
+                        <div class="tauthor__info d-flex flex-column justify-content-center">
+                          <p class="tauthor__name">Jackson Lee</p>
+                          <p class="tauthor__position">
+                            Movies Trending Website Owner.
+                          </p>
+                          <div class="tauthor__rating d-flex">
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                            <i class="ph-fill ph-star"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="testimonials-card__descr animate-in-up">
+                        <p>
+                          Jamal showed exceptional commitment and precision in
+                          delivering tasks on time while maintaining quality,
+                          including seamless API integration. His innovative
+                          suggestions helped significantly optimize the
+                          project's efficiency. His problem-solving skills
+                          improved.
+                        </p>
+                      </div>
+
+                      <div class="testimonials-card__btnholder animate-in-up">
+                        <a class="btn mobile-vertical btn-line btn-transparent slide-right"
+                          href="#project-isometric-houses">
+                          <span class="btn-caption">Project Page</span>
+                          <i class="ph-bold ph-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-button-prev mxd-slider-btn-square mxd-slider-btn-square-prev animate-in-up">
+                  <a class="btn btn-square btn-square-s btn-outline slide-left">
+                    <i class="ph-bold ph-caret-left"></i>
+                  </a>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-next mxd-slider-btn-square mxd-slider-btn-square-next animate-in-up">
+                  <a class="btn btn-square btn-square-s btn-outline slide-right">
+                    <i class="ph-bold ph-caret-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="block-large">
+          <header class="content__block section-faq">
+            <p class="h2__subtitle animate-in-up">
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13"
+                fill="currentColor">
+                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                       C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                       C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z" />
+              </svg>
+              <span>FAQ</span>
+            </p>
+            <h2 class="h2__title animate-in-up">
+              Frequently Asked Questions
+            </h2>
+          </header>
+
+          <div class="content__block">
+            <div class="accordion animate-card-2">
+              <button id="accordion-button" aria-expanded="false">
+                <div class="container__question accordion-title">
+                  <span class="Badges">01</span>
+                  <h5>What makes me the best choice for your project?</h5>
+                </div>
+                <span class="icon" aria-hidden="true">
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+                </span>
+              </button>
+              <div class="accordion-content">
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-check"></i>&nbsp;&nbsp;I deliver
+                    high-quality work using the latest technologies such as
+                    React, Next.js, to ensure optimal performance.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>&nbsp;&nbsp;I focus on
+                    user experience (UX) to ensure a simple and engaging
+                    design.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>&nbsp;&nbsp;I provide
+                    customized solutions that fit your needs, project goals,
+                    and budget.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>&nbsp;&nbsp;I conduct
+                    thorough testing to ensure the project runs smoothly on
+                    all devices and browsers.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>&nbsp;&nbsp;I maintain
+                    constant communication throughout the project to ensure
+                    the results meet your expectations.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>&nbsp;&nbsp;A clear
+                    timeline is set from the beginning and strictly followed
+                    based on the project's size and requirements.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="accordion animate-card-2">
+              <button id="accordion-button" aria-expanded="false">
+                <div class="container__question accordion-title">
+                  <span class="Badges">02</span>
+                  <h5>What are my steps to ensure commitment and quality?</h5>
+                </div>
+                <span class="icon" aria-hidden="true">
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+                </span>
+              </button>
+              <div class="accordion-content">
+                <ul>
+                  <li>
+                    Planning:&nbsp;&nbsp;I start by collaborating with you to
+                    define project requirements and create a clear, structured
+                    plan.
+                  </li>
+                  <li>
+                    Design:&nbsp;&nbsp;I craft creative and user-friendly
+                    interfaces tailored to your needs.
+                  </li>
+                  <li>
+                    Development:&nbsp;&nbsp;I build the project using advanced
+                    tools to ensure high quality and optimal performance.
+                  </li>
+                  <li>
+                    Testing:&nbsp;&nbsp;I conduct thorough testing to
+                    guarantee everything works flawlessly and is free of
+                    errors.
+                  </li>
+                  <li>
+                    Documentation & Delivery:&nbsp;&nbsp;I document all
+                    aspects of the project carefully and deliver it once it's
+                    fully completed.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="accordion animate-card-2">
+              <button id="accordion-button" aria-expanded="false">
+                <div class="container__question accordion-title">
+                  <span class="Badges">03</span>
+                  <h5>
+                    Do I offer a warranty? What is its duration and what does
+                    it not cover?
+                  </h5>
+                </div>
+                <span class="icon" aria-hidden="true">
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+                </span>
+              </button>
+              <div class="accordion-content">
+                <ul>
+                  <li>
+                    <p>
+                      Yes, I offer post-delivery services (warranty period),
+                      which includes:
+                    </p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>&nbsp;&nbsp; Fixing bugs
+                    and errors that appear after delivery (programming and
+                    design).
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>&nbsp;&nbsp; Making
+                    simple adjustments and updates at no extra cost.
+                  </li>
+                  <li>
+                    <p>
+                      The warranty duration depends on the package you choose.
+                    </p>
+                  </li>
+                  <li>
+                    <p>What’s not covered by the warranty?</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>&nbsp;&nbsp; It doesn’t
+                    cover issues caused by misuse of the final product or
+                    third-party attempts to fix or improve it.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>&nbsp;&nbsp; My
+                    responsibilities end when the warranty period expires, and
+                    all warranty services stop.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>&nbsp;&nbsp; You can
+                    still get technical support after the warranty period
+                    ends.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="accordion animate-card-2">
+              <button id="accordion-button" aria-expanded="false">
+                <div class="container__question accordion-title">
+                  <span class="Badges">04</span>
+                  <h5>
+                    What is project documentation and what does it include?
+                  </h5>
+                </div>
+                <span class="icon" aria-hidden="true">
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+                </span>
+              </button>
+              <div class="accordion-content">
+                <ul>
+                  <li>
+                    <p>
+                      Documentation is the creation of detailed files that
+                      explain all aspects of the project, serving as a
+                      reliable reference for you anytime after the warranty
+                      period ends.
+                    </p>
+                  </li>
+                  <li>
+                    <p>Contents of the documentation:</p>
+                  </li>
+                  <li>
+                    Project description:&nbsp;&nbsp;An overview of the
+                    project, its goals, challenges, and how they were
+                    addressed.
+                  </li>
+                  <li>
+                    Overall structure:&nbsp;&nbsp;Organizing files and folders
+                    to clarify the project’s structure.
+                  </li>
+                  <li>
+                    Code details:&nbsp;&nbsp;Explanation of key parts of the
+                    code, functions, and libraries used.
+                  </li>
+                  <li>
+                    User guide:&nbsp;&nbsp;Instructions for running the
+                    project and making future changes easily.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="accordion accordion__none animate-card-2">
+              <button id="accordion-button" aria-expanded="false">
+                <div class="container__question accordion-title">
+                  <span class="Badges">05</span>
+                  <h5>What are the guidelines for project revisions?</h5>
+                </div>
+                <span class="icon" aria-hidden="true">
+                  <i class="fas fa-plus"></i>
+                  <i class="fas fa-minus"></i>
+                </span>
+              </button>
+              <div class="accordion-content">
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-check"></i>&nbsp;&nbsp; Each phase
+                    includes a set number of revisions (varies by project). At
+                    final delivery, a specific number of revisions are
+                    allowed.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>&nbsp;&nbsp; For
+                    additional revisions, how to handle them will be based on
+                    their nature. Some revisions may affect the delivery time,
+                    but I will do my best to deliver the project on time.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <footer id="contact">
+        <div class="content__block grid-block">
+          <div class="socials-cards d-flex justify-content-start flex-wrap">
+            <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+              <div class="socials-cards__card">
+                <i class="ph-bold ph-behance-logo"></i>
+                <a class="socials-cards__link" href="https://www.behance.net/jamal_uix_designer" target="_blank"></a>
+              </div>
+            </div>
+
+            <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+              <div class="socials-cards__card">
+                <i class="ph-bold ph-dribbble-logo"></i>
+                <a class="socials-cards__link" href="https://dribbble.com/jamal_uix_des" target="_blank"></a>
+              </div>
+            </div>
+
+            <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+              <div class="socials-cards__card">
+                <i class="fa-brands fa-github"></i>
+                <a class="socials-cards__link" href="https://tinyurl.com/jamal-uix-dev-gh" target="_blank"></a>
+              </div>
+            </div>
+
+            <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+              <div class="socials-cards__card">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <a class="socials-cards__link" href="https://tinyurl.com/jamalbassiouni-uix-dev-lk" target="_blank"></a>
+              </div>
+            </div>
+
+            <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+              <div class="socials-cards__card">
+                <i class="fa-brands fa-x-twitter"></i>
+                <a class="socials-cards__link" href="
+                                https://tinyurl.com/jamal-uix-dev-x" target="_blank"></a>
+              </div>
+            </div>
+
+            <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+              <div class="socials-cards__card">
+                <i class="ph-bold ph-instagram-logo"></i>
+                <a class="socials-cards__link" href="https://tinyurl.com/jamal-uix-dev-insta" target="_blank"></a>
+              </div>
+            </div>
+
+            <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+              <div class="socials-cards__card">
+                <i class="fa-brands fa-facebook-f"></i>
+                <a class="socials-cards__link" href="https://tinyurl.com/jamal-uix-dev-fbpage" target="_blank"></a>
+              </div>
+            </div>
+
+            <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+              <div class="socials-cards__card">
+                <i class="fa-solid fa-paper-plane"></i>
+                <a class="socials-cards__link" href="https://tinyurl.com/jamal-uix-dev-tg" target="_blank"></a>
+              </div>
+            </div>
+
+            <div class="socials-cards__item d-flex grid-item-s animate-card-5">
+              <div class="socials-cards__card">
+                <i class="fa-brands fa-reddit-alien"></i>
+                <a class="socials-cards__link" href="https://tinyurl.com/jamal-uix-dev-rd" target="_blank"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content__block">
+          <div class="teaser">
+            <p class="teaser__text animate-in-up">
+              Want to know more about me, tell me about your project or just
+              say hello? Send me a message and I'll get in touch with you as
+              soon as possible
+            </p>
+          </div>
+          <div class="rotating-btn rotating-btn-top">
+            <a href="#main" class="rotating-btn__link slide-down">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" style="enable-background: new 0 0 120 120"
+                xml:space="preserve" class="animate-rotation" data-value="275">
+                <defs>
+                  <path id="textPath"
+                    d="M110,59.5c0,27.6-22.4,50-50,50s-50-22.4-50-50s22.4-50,50-50S110,31.9,110,59.5z" />
+                </defs>
+                <g>
+                  <use xlink:href="#textPath" fill="none"></use>
+                  <text>
+                    <textPath xlink:href="#textPath" textLength="307">
+                      scroll to top * scroll to top *
+                    </textPath>
+                  </text>
+                </g>
+              </svg>
+              <i class="ph-bold ph-arrow-up"></i>
+            </a>
+          </div>
+        </div>
+
+        <address class="content__block">
+          <div class="container-fluid p-0 contact-lines animate-in-up info-personal">
+            <div class="row g-5 contact-lines__item info-personal">
+              <div class="col-md-6 col-xl-4 contact-lines__data">
+                <p class="contact-lines__title animate-in-up">Location</p>
+                <p class="contact-lines__text animate-in-up">
+                  Alexandria, Egypt
+                </p>
+              </div>
+
+              <div class="col-md-6 col-xl-4 contact-lines__data">
+                <p class="contact-lines__title animate-in-up">Phone</p>
+                <p class="contact-lines__text animate-in-up">
+                  <a class="text-link" href="https://tinyurl.com/jamal-uix-dev-wsb" target="_blank">+20 103 229 8622
+                  </a>
+                </p>
+              </div>
+
+              <div class="col-md-6 col-xl-4 contact-lines__data">
+                <p class="contact-lines__title animate-in-up">Email</p>
+                <p class="contact-lines__text animate-in-up">
+                  <a class="text-link"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=jamalbassiounifreelancehub@gmail.com"
+                    target="_blank">
+                    jamalbassiounifreelancehub@gmail.com</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </address>
+      </footer>
+    </div>
+  </main>
+
+  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+      <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+      </div>
+
+      <div class="pswp__ui pswp__ui--hidden">
+        <div class="pswp__top-bar">
+          <div class="pswp__counter"></div>
+
+          <button class="pswp__button pswp__button--close link-s" title="Close (Esc)"></button>
+
+          <button class="pswp__button pswp__button--share link-s" title="Share"></button>
+
+          <button class="pswp__button pswp__button--fs link-s" title="Toggle fullscreen"></button>
+
+          <button class="pswp__button pswp__button--zoom link-s" title="Zoom in/out"></button>
+
+          <div class="pswp__preloader">
+            <div class="pswp__preloader__icn">
+              <div class="pswp__preloader__cut">
+                <div class="pswp__preloader__donut"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+          <div class="pswp__share-tooltip"></div>
+        </div>
+
+        <button class="pswp__button pswp__button--arrow--left link-s" title="Previous (arrow left)"></button>
+
+        <button class="pswp__button pswp__button--arrow--right link-s" title="Next (arrow right)"></button>
+
+        <div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script>
+  <script src="https://web-story.storyly.io/sdk/3.6.1/storyly-web.js"></script>
+
+  <!-- <script>
+      (function (d) {
+        var config = {
+          /* ضع هنا معرف (ID) الودجت الخاص بك إذا كان لديك حساب UserWay */
+          widgetId: 'YOUR_WIDGET_ID',
+          /* يمكنك تخصيص الخيارات مثل اللغة */
+          language: 'en'
+        };
+
+        var script = d.createElement('script');
+        script.src = "https://cdn.userway.org/widget.js";
+        script.defer = true;
+        script.setAttribute('data-config', JSON.stringify(config));
+        d.head.appendChild(script);
+
+        // الانتظار حتى يتم تحميل السكربت ثم تغيير اللون
+        script.onload = function () {
+          var interval = setInterval(function () {
+            var userWayIcon = document.querySelector('#userwayAccessibilityIcon');
+            if (userWayIcon) {
+              // تغيير الخلفية إلى اللون الأحمر
+              userWayIcon.style.background = '';
+              userWayIcon.style.position = '';
+              userWayIcon.style.bottom = '';
+              clearInterval(interval); // إيقاف المراقبة بعد تغيير اللون
+            }
+          }, 100); // كل 100 ميلي ثانية
+        };
+      })(document);
+    </script> -->
+
+  <script src="js/libs.min.js"></script>
+  <script>
+    const randomX = random(-400, 400);
+    const randomY = random(-200, 200);
+    const randomDelay = random(0, 50);
+    const randomTime = random(20, 40);
+    const randomTime2 = random(5, 12);
+    const randomAngle = random(-30, 150);
+
+    const blurs = gsap.utils.toArray(".blur");
+    blurs.forEach((blur) => {
+      gsap.set(blur, {
+        x: randomX(-1),
+        y: randomX(1),
+        rotation: randomAngle(-1),
+      });
+
+      moveX(blur, 1);
+      moveY(blur, -1);
+      rotate(blur, 1);
+    });
+
+    function rotate(target, direction) {
+      gsap.to(target, randomTime2(), {
+        rotation: randomAngle(direction),
+        ease: Sine.easeInOut,
+        onComplete: rotate,
+        onCompleteParams: [target, direction * -1],
+      });
+    }
+
+    function moveX(target, direction) {
+      gsap.to(target, randomTime(), {
+        x: randomX(direction),
+        ease: Sine.easeInOut,
+        onComplete: moveX,
+        onCompleteParams: [target, direction * -1],
+      });
+    }
+
+    function moveY(target, direction) {
+      gsap.to(target, randomTime(), {
+        y: randomY(direction),
+        ease: Sine.easeInOut,
+        onComplete: moveY,
+        onCompleteParams: [target, direction * -1],
+      });
+    }
+
+    function random(min, max) {
+      const delta = max - min;
+      return (direction = 1) => (min + delta * Math.random()) * direction;
+    }
+  </script>
+  <script src="js/app.js"></script>
+  <script src="js/gallery-init.js"></script>
+  <!-- Load Scripts End -->
+</body>
+
+</html>
