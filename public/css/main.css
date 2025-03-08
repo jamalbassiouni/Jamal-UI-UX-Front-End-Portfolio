@@ -3248,6 +3248,7 @@ form textarea:required:valid {
   .content__block.grid-block {
     padding: 0 1.5rem;
   }
+
   .content__block-packages {
     padding: 0 2rem 0 2rem;
   }
@@ -3280,7 +3281,7 @@ form textarea:required:valid {
   .content__block-packages {
     padding: 0 7rem 0 4rem;
   }
-  
+
 }
 
 @media only screen and (min-width: 1600px) {
@@ -3889,7 +3890,7 @@ form textarea:required:valid {
 
 .logo__image {
   width: 60px;
-  height: 60px;
+  height: 55px;
 
 }
 
@@ -3901,7 +3902,7 @@ form textarea:required:valid {
 @media only screen and (min-width: 1400px) {
   .logo__image {
     width: 75px;
-    height: 75px;
+    height: 65px;
   }
 }
 
@@ -4936,8 +4937,9 @@ form textarea:required:valid {
 /* ------------------------------------------------*/
 /* Features Testimonials Start */
 /* ------------------------------------------------*/
+
 .testimonials-card {
-  padding: 3rem;
+  padding: 20px;
   background-color: var(--base);
   border: 1px solid var(--stroke-elements);
   -moz-border-radius: var(--_radius-xl);
@@ -5043,7 +5045,6 @@ form textarea:required:valid {
 }
 
 .blog-card {
-  /* padding: 3rem; */
   background-color: var(--base);
   border: 1px solid var(--stroke-elements);
   -moz-border-radius: var(--_radius-xl);
@@ -5057,9 +5058,7 @@ form textarea:required:valid {
 }
 
 .blog-card__descr {
-  padding: 2rem 3rem 3rem;
-  max-width: 1050px;
-  margin-top: 2rem;
+  padding: 4rem 3rem;
 
 }
 

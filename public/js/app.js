@@ -514,10 +514,10 @@ $(function () {
     const swiper = new Swiper('.swiper-testimonials', {
       slidesPerView: 1,
       spaceBetween: 20,
-      autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 3500,
+      //   disableOnInteraction: false,
+      // },
       pagination: {
         el: ".swiper-pagination",
         type: "fraction",
@@ -536,10 +536,10 @@ $(function () {
   if (!toolsSlider) {
     const swiper = new Swiper('.swiper-blog', {
       spaceBetween: 20,
-      autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 3500,
+      //   disableOnInteraction: false,
+      // },
       grabCursor: true,
       speed: 1000,
       loop: true,
