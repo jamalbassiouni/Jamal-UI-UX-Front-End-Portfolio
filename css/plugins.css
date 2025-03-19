@@ -1,35 +1,3 @@
-/*! ------------------------------------------------
- * Project Name: Name: Braxton - Personal Portfolio & Resume HTML Template
- * Project Description: Show yourself brightly with Braxton - unique and creative portfolio and resume template!
- * Tags: mix_design, resume, portfolio, personal page, cv, template, one page, responsive, html5, css3, creative, clean 
- * Version: 1.0.0
- * Build Date: March 2024
- * Last Update: March 2024
- * This product is available exclusively on Themeforest
- * Author: mix_design
- * Author URI: https://themeforest.net/user/mix_design */
-/*! File name: plugins.css
- * ------------------------------------------------
- *
- * ------------------------------------------------
- * Table of Contents
- * ------------------------------------------------
- *  01. Reset CSS
- *  02. Bootstrap Grid Component
- *  03. Phosphor Icons
- *  04. Fontawesome Icons
- *  05. Swiper Slider
- *  06. PhotoSwipe Gallery
- * ------------------------------------------------
- * Table of Contents End
- * ------------------------------------------------ */
-/* ------------------------------------------------*/
-/* Reset CSS Start */
-/* ------------------------------------------------*/
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 html,
 body,
 div,
@@ -164,17 +132,6 @@ table {
   border-spacing: 0;
 }
 
-/* ------------------------------------------------*/
-/* Reset CSS End */
-/* ------------------------------------------------*/
-/* ------------------------------------------------*/
-/* Bootstrap Grid Component Start */
-/* ------------------------------------------------*/
-/*!
- * Bootstrap Grid v5.3.2 (https://getbootstrap.com/)
- * Copyright 2011-2023 The Bootstrap Authors
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 .container,
 .container-fluid,
 .container-xxl,
@@ -6312,11 +6269,6 @@ table {
   }
 }
 
-/*!
- * Bootstrap Utilities v5.3.2 (https://getbootstrap.com/)
- * Copyright 2011-2023 The Bootstrap Authors
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -8355,13 +8307,11 @@ table {
   white-space: nowrap !important;
 }
 
-/* rtl:begin:remove */
 .text-break {
   word-wrap: break-word !important;
   word-break: break-word !important;
 }
 
-/* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
@@ -13482,12 +13432,6 @@ table {
   }
 }
 
-/* ------------------------------------------------*/
-/* Bootstrap Grid Component End */
-/* ------------------------------------------------*/
-/* ------------------------------------------------*/
-/* Phosphor Icons Start */
-/* ------------------------------------------------*/
 @font-face {
   font-family: "Phosphor-Bold";
   src: url("../fonts/Phosphor/Phosphor-Bold.woff2") format("woff2"), url("../fonts/Phosphor/Phosphor-Bold.woff") format("woff"), url("../fonts/Phosphor/Phosphor-Bold.ttf") format("truetype"), url("../fonts/Phosphor/Phosphor-Bold.svg#Phosphor-Bold") format("svg");
@@ -13497,7 +13441,6 @@ table {
 }
 
 .ph-bold {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "Phosphor-Bold" !important;
   speak: never;
   font-style: normal;
@@ -13505,7 +13448,6 @@ table {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -18521,7 +18463,6 @@ table {
 }
 
 .ph-duotone {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "Phosphor-Duotone" !important;
   speak: never;
   font-style: normal;
@@ -18529,7 +18470,6 @@ table {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -31031,7 +30971,6 @@ table {
 }
 
 .ph-fill {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "Phosphor-Fill" !important;
   speak: never;
   font-style: normal;
@@ -31039,7 +30978,6 @@ table {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -36055,7 +35993,6 @@ table {
 }
 
 .ph-light {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "Phosphor-Light" !important;
   speak: never;
   font-style: normal;
@@ -36063,7 +36000,6 @@ table {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -41079,7 +41015,6 @@ table {
 }
 
 .ph {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "Phosphor" !important;
   speak: never;
   font-style: normal;
@@ -41087,7 +41022,6 @@ table {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -46103,7 +46037,6 @@ table {
 }
 
 .ph-thin {
-  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "Phosphor-Thin" !important;
   speak: never;
   font-style: normal;
@@ -46111,7 +46044,6 @@ table {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -51118,17 +51050,6 @@ table {
   content: "\eddf";
 }
 
-/* ------------------------------------------------*/
-/* Phosphor Icons End */
-/* ------------------------------------------------*/
-/* ------------------------------------------------*/
-/* Fontawesome Start */
-/* ------------------------------------------------*/
-/*!
- * Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- * Copyright 2023 Fonticons, Inc.
- */
 .fa {
   font-family: var(--fa-style-family, "Font Awesome 6 Free");
   font-weight: var(--fa-style, 900);
@@ -52012,8 +51933,6 @@ table {
   color: var(--fa-inverse, #fff);
 }
 
-/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
-readers do not read off random characters that represent icons */
 .fa-0::before {
   content: "\30 ";
 }
@@ -59840,11 +59759,6 @@ readers do not read off random characters that represent icons */
   border-width: 0;
 }
 
-/*!
- * Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- * Copyright 2023 Fonticons, Inc.
- */
 .fa.fa-glass:before {
   content: "\f000";
 }
@@ -62659,11 +62573,6 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-/*!
- * Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- * Copyright 2023 Fonticons, Inc.
- */
 :root,
 :host {
   --fa-style-family-classic: "Font Awesome 6 Free";
@@ -62683,11 +62592,6 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
-/*!
- * Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- * Copyright 2023 Fonticons, Inc.
- */
 :root,
 :host {
   --fa-style-family-classic: "Font Awesome 6 Free";
@@ -62707,11 +62611,6 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-/*!
- * Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- * Copyright 2023 Fonticons, Inc.
- */
 :root,
 :host {
   --fa-style-family-brands: "Font Awesome 6 Brands";
@@ -64803,24 +64702,6 @@ readers do not read off random characters that represent icons */
   content: "\f3f6";
 }
 
-/* ------------------------------------------------*/
-/* Fontawesome End */
-/* ------------------------------------------------*/
-/* ------------------------------------------------*/
-/* Swiper Slider Start */
-/* ------------------------------------------------*/
-/**
- * Swiper 11.0.5
- * Most modern mobile touch slider and framework with hardware accelerated transitions
- * https://swiperjs.com
- *
- * Copyright 2014-2023 Vladimir Kharlampidi
- *
- * Released under the MIT License
- *
- * Released on: November 22, 2023
- */
-/* FONT_START */
 @font-face {
   font-family: "swiper-icons";
   src: url("data:application/font-woff;charset=utf-8;base64, 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");
@@ -64829,13 +64710,8 @@ readers do not read off random characters that represent icons */
   font-display: swap;
 }
 
-/* FONT_END */
 :root {
   --swiper-theme-color: #007aff;
-  /*
-  --swiper-preloader-color: var(--swiper-theme-color);
-  --swiper-wrapper-transition-timing-function: initial;
-  */
 }
 
 :host {
@@ -64853,7 +64729,6 @@ readers do not read off random characters that represent icons */
   overflow: hidden;
   list-style: none;
   padding: 0;
-  /* Fix of Webkit flickering */
   z-index: 1;
   display: block;
 }
@@ -64925,7 +64800,6 @@ readers do not read off random characters that represent icons */
   visibility: hidden;
 }
 
-/* Auto Height */
 .swiper-autoheight,
 .swiper-autoheight .swiper-slide {
   height: auto;
@@ -64952,7 +64826,6 @@ readers do not read off random characters that represent icons */
   backface-visibility: hidden;
 }
 
-/* 3D Effects */
 .swiper-3d.swiper-css-mode .swiper-wrapper {
   -webkit-perspective: 1200px;
   -moz-perspective: 1200px;
@@ -64978,13 +64851,10 @@ readers do not read off random characters that represent icons */
   transform-style: preserve-3d;
 }
 
-/* CSS Mode */
 .swiper-css-mode>.swiper-wrapper {
   overflow: auto;
   scrollbar-width: none;
-  /* For Firefox */
   -ms-overflow-style: none;
-  /* For Internet Explorer and Edge */
 }
 
 .swiper-css-mode>.swiper-wrapper::-webkit-scrollbar {
@@ -65052,8 +64922,6 @@ readers do not read off random characters that represent icons */
   height: var(--swiper-centered-offset-after);
 }
 
-/* Slide styles start */
-/* 3D Shadows */
 .swiper-3d .swiper-slide-shadow,
 .swiper-3d .swiper-slide-shadow-left,
 .swiper-3d .swiper-slide-shadow-right,
@@ -65176,7 +65044,6 @@ readers do not read off random characters that represent icons */
   }
 }
 
-/* Slide styles end */
 .swiper-virtual .swiper-slide {
   -webkit-backface-visibility: hidden;
   -webkit-transform: translateZ(0);
@@ -65204,11 +65071,6 @@ readers do not read off random characters that represent icons */
 
 :root {
   --swiper-navigation-size: 44px;
-  /*
-  --swiper-navigation-top-offset: 50%;
-  --swiper-navigation-sides-offset: 10px;
-  --swiper-navigation-color: var(--swiper-theme-color);
-  */
 }
 
 .swiper-button-prev,
@@ -65292,7 +65154,6 @@ readers do not read off random characters that represent icons */
   display: none;
 }
 
-/* Navigation font start */
 .swiper-button-prev:after,
 .swiper-button-next:after {
   font-family: swiper-icons;
@@ -65319,29 +65180,6 @@ readers do not read off random characters that represent icons */
   content: "next";
 }
 
-/* Navigation font end */
-:root {
-  /*
-  --swiper-pagination-color: var(--swiper-theme-color);
-  --swiper-pagination-left: auto;
-  --swiper-pagination-right: 8px;
-  --swiper-pagination-bottom: 8px;
-  --swiper-pagination-top: auto;
-  --swiper-pagination-fraction-color: inherit;
-  --swiper-pagination-progressbar-bg-color: rgba(0,0,0,0.25);
-  --swiper-pagination-progressbar-size: 4px;
-  --swiper-pagination-bullet-size: 8px;
-  --swiper-pagination-bullet-width: 8px;
-  --swiper-pagination-bullet-height: 8px;
-  --swiper-pagination-bullet-border-radius: 50%;
-  --swiper-pagination-bullet-inactive-color: #000;
-  --swiper-pagination-bullet-inactive-opacity: 0.2;
-  --swiper-pagination-bullet-opacity: 1;
-  --swiper-pagination-bullet-horizontal-gap: 4px;
-  --swiper-pagination-bullet-vertical-gap: 6px;
-  */
-}
-
 .swiper-pagination {
   position: absolute;
   text-align: center;
@@ -65363,7 +65201,6 @@ readers do not read off random characters that represent icons */
   display: none !important;
 }
 
-/* Common Styles */
 .swiper-pagination-fraction,
 .swiper-pagination-custom,
 .swiper-horizontal>.swiper-pagination-bullets,
@@ -65374,7 +65211,6 @@ readers do not read off random characters that represent icons */
   width: 100%;
 }
 
-/* Bullets */
 .swiper-pagination-bullets-dynamic {
   overflow: hidden;
   font-size: 0;
@@ -65533,12 +65369,10 @@ button.swiper-pagination-bullet {
   transition: 200ms transform, 200ms right, 200ms -webkit-transform, 200ms -moz-transform;
 }
 
-/* Fraction */
 .swiper-pagination-fraction {
   color: var(--swiper-pagination-fraction-color, inherit);
 }
 
-/* Progress */
 .swiper-pagination-progressbar {
   background: var(--swiper-pagination-progressbar-bg-color, rgba(0, 0, 0, 0.25));
   position: absolute;
@@ -65590,20 +65424,6 @@ button.swiper-pagination-bullet {
 
 .swiper-pagination-lock {
   display: none;
-}
-
-:root {
-  /*
-  --swiper-scrollbar-border-radius: 10px;
-  --swiper-scrollbar-top: auto;
-  --swiper-scrollbar-bottom: 4px;
-  --swiper-scrollbar-left: auto;
-  --swiper-scrollbar-right: 4px;
-  --swiper-scrollbar-sides-offset: 1%;
-  --swiper-scrollbar-bg-color: rgba(0, 0, 0, 0.1);
-  --swiper-scrollbar-drag-bg-color: rgba(0, 0, 0, 0.5);
-  --swiper-scrollbar-size: 4px;
-  */
 }
 
 .swiper-scrollbar {
@@ -65663,7 +65483,6 @@ button.swiper-pagination-bullet {
   display: none;
 }
 
-/* Zoom container styles start */
 .swiper-zoom-container {
   width: 100%;
   height: 100%;
@@ -65691,14 +65510,12 @@ button.swiper-pagination-bullet {
   object-fit: contain;
 }
 
-/* Zoom container styles end */
 .swiper-slide-zoomed {
   cursor: move;
   -ms-touch-action: none;
   touch-action: none;
 }
 
-/* a11y */
 .swiper .swiper-notification {
   position: absolute;
   left: 0;
@@ -65825,7 +65642,6 @@ button.swiper-pagination-bullet {
   visibility: visible;
 }
 
-/* Cube slide shadows start */
 .swiper-cube .swiper-slide-shadow-cube.swiper-slide-shadow-top,
 .swiper-cube .swiper-slide-shadow-cube.swiper-slide-shadow-bottom,
 .swiper-cube .swiper-slide-shadow-cube.swiper-slide-shadow-left,
@@ -65836,7 +65652,6 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
 }
 
-/* Cube slide shadows end */
 .swiper-flip {
   overflow: visible;
 }
@@ -65858,7 +65673,6 @@ button.swiper-pagination-bullet {
   pointer-events: auto;
 }
 
-/* Flip slide shadows start */
 .swiper-flip .swiper-slide-shadow-flip.swiper-slide-shadow-top,
 .swiper-flip .swiper-slide-shadow-flip.swiper-slide-shadow-bottom,
 .swiper-flip .swiper-slide-shadow-flip.swiper-slide-shadow-left,
@@ -65869,7 +65683,6 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
 }
 
-/* Flip slide shadows end */
 .swiper-creative .swiper-slide {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -65897,17 +65710,6 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-/* ------------------------------------------------*/
-/* Swiper Slider End */
-/* ------------------------------------------------*/
-/* ------------------------------------------------*/
-/* PhotoSwipe Gallery Start */
-/* ------------------------------------------------*/
-/*! PhotoSwipe main CSS by Dmitry Semenov | photoswipe.com | MIT license */
-/*
-	Styles for basic PhotoSwipe functionality (sliding area, open/close transitions)
-*/
-/* pswp = photoswipe */
 .pswp {
   display: none;
   position: absolute;
@@ -65920,7 +65722,6 @@ button.swiper-pagination-bullet {
   touch-action: none;
   z-index: 1500;
   -webkit-text-size-adjust: 100%;
-  /* create separate layer, to avoid paint on window.onscroll in webkit/blink */
   -webkit-backface-visibility: hidden;
   outline: none;
 }
@@ -65935,12 +65736,9 @@ button.swiper-pagination-bullet {
   max-width: none;
 }
 
-/* style is added when JS option showHideOpacity is set to true */
 .pswp--animate_opacity {
-  /* 0.001, because opacity:0 doesn't trigger Paint action, which causes lag at start of transition */
   opacity: 0.001;
   will-change: opacity;
-  /* for open/close transition */
   -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
   -moz-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
   transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
@@ -65951,7 +65749,6 @@ button.swiper-pagination-bullet {
 }
 
 .pswp--zoom-allowed .pswp__img {
-  /* autoprefixer: off */
   cursor: -webkit-zoom-in;
   cursor: -moz-zoom-in;
   cursor: zoom-in;
@@ -65961,23 +65758,17 @@ button.swiper-pagination-bullet {
 }
 
 .pswp--zoomed-in .pswp__img {
-  /* autoprefixer: off */
   cursor: -webkit-grab;
   cursor: -moz-grab;
   cursor: grab;
 }
 
 .pswp--dragging .pswp__img {
-  /* autoprefixer: off */
   cursor: -webkit-grabbing;
   cursor: -moz-grabbing;
   cursor: grabbing;
 }
 
-/*
-	Background is added as a separate element.
-	As animating opacity is much faster than animating rgba() background-color.
-*/
 .pswp__bg {
   position: absolute;
   left: 0;
@@ -66013,7 +65804,6 @@ button.swiper-pagination-bullet {
   bottom: 0;
 }
 
-/* Prevent selection and tap highlights */
 .pswp__container,
 .pswp__img {
   -webkit-user-select: none;
@@ -66031,7 +65821,6 @@ button.swiper-pagination-bullet {
   -moz-transform-origin: left top;
   -ms-transform-origin: left top;
   transform-origin: left top;
-  /* for open/close transition */
   -webkit-transition: -webkit-transform 333ms cubic-bezier(0.4, 0, 0.22, 1);
   transition: -webkit-transform 333ms cubic-bezier(0.4, 0, 0.22, 1);
   -moz-transition: transform 333ms cubic-bezier(0.4, 0, 0.22, 1), -moz-transform 333ms cubic-bezier(0.4, 0, 0.22, 1);
@@ -66041,7 +65830,6 @@ button.swiper-pagination-bullet {
 
 .pswp__bg {
   will-change: opacity;
-  /* for open/close transition */
   -webkit-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
   -moz-transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
   transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
@@ -66076,18 +65864,10 @@ button.swiper-pagination-bullet {
   left: 0;
 }
 
-/*
-	stretched thumbnail or div placeholder element (see below)
-	style is added to avoid flickering in webkit/blink when layers overlap
-*/
 .pswp__img--placeholder {
   -webkit-backface-visibility: hidden;
 }
 
-/*
-	div element that matches size of large image
-	large image loads on top of it
-*/
 .pswp__img--placeholder--blank {
   background: #222;
 }
@@ -66099,10 +65879,6 @@ button.swiper-pagination-bullet {
   top: 0;
 }
 
-/*
-	Error message appears when image is not loaded
-	(JS option errorMsg controls markup)
-*/
 .pswp__error-msg {
   position: absolute;
   left: 0;
@@ -66120,25 +65896,6 @@ button.swiper-pagination-bullet {
   text-decoration: underline;
 }
 
-/*! PhotoSwipe Default UI CSS by Dmitry Semenov | photoswipe.com | MIT license */
-/*
-
-	Contents:
-
-	1. Buttons
-	2. Share modal and links
-	3. Index indicator ("1 of X" counter)
-	4. Caption
-	5. Loading indicator
-	6. Additional styles (root element, top bar, idle state, hidden state, etc.)
-
-*/
-/*
-
-	1. Buttons
-
- */
-/* <button> css reset */
 .pswp__button {
   width: 44px;
   height: 44px;
@@ -66176,7 +65933,6 @@ button.swiper-pagination-bullet {
   border: 0;
 }
 
-/* pswp__ui--over-close class it added when mouse is over element that should close gallery */
 .pswp__ui--over-close .pswp__button--close {
   opacity: 1;
 }
@@ -66184,7 +65940,7 @@ button.swiper-pagination-bullet {
 .pswp__button,
 .pswp__button--arrow--left:before,
 .pswp__button--arrow--right:before {
-  background: url(../img/default-skin.png) 0 0 no-repeat;
+  background: url(../img/works/default-skin.webp) 0 0 no-repeat;
   -moz-background-size: 264px 88px;
   background-size: 264px 88px;
   width: 44px;
@@ -66198,11 +65954,10 @@ button.swiper-pagination-bullet {
 (min--moz-device-pixel-ratio: 1.1),
 (min-resolution: 1.1dppx) {
 
-  /* Serve SVG sprite if browser supports SVG and resolution is more than 105dpi */
   .pswp--svg .pswp__button,
   .pswp--svg .pswp__button--arrow--left:before,
   .pswp--svg .pswp__button--arrow--right:before {
-    background-image: url(../img/default-skin.svg);
+    background-image: url(../img/icons/default-skin.svg);
   }
 
   .pswp--svg .pswp__button--arrow--left,
@@ -66244,16 +65999,11 @@ button.swiper-pagination-bullet {
   background-position: -132px 0;
 }
 
-/* no arrows on touch screens */
 .pswp--touch .pswp__button--arrow--left,
 .pswp--touch .pswp__button--arrow--right {
   visibility: hidden;
 }
 
-/*
-	Arrow buttons hit area
-	(icon is added to :before pseudo-element)
-*/
 .pswp__button--arrow--left,
 .pswp__button--arrow--right {
   background: none;
@@ -66292,11 +66042,6 @@ button.swiper-pagination-bullet {
   background-position: -94px -44px;
 }
 
-/*
-
-	2. Share modal/popup and links
-
- */
 .pswp__counter,
 .pswp__share-modal {
   -webkit-user-select: none;
@@ -66368,7 +66113,6 @@ button.swiper-pagination-bullet {
 }
 
 .pswp__share-tooltip a:first-child {
-  /* round corners on the first/last list item */
   -moz-border-radius: 2px 2px 0 0;
   border-radius: 2px 2px 0 0;
 }
@@ -66389,7 +66133,6 @@ button.swiper-pagination-bullet {
   transform: translateY(0);
 }
 
-/* increase size of share links on touch devices */
 .pswp--touch .pswp__share-tooltip a {
   padding: 16px 12px;
 }
@@ -66432,11 +66175,6 @@ a.pswp__share--download:hover {
   background: #DDD;
 }
 
-/*
-
-	3. Index indicator ("1 of X" counter)
-
- */
 .pswp__counter {
   position: absolute;
   left: 0;
@@ -66449,11 +66187,6 @@ a.pswp__share--download:hover {
   padding: 0 10px;
 }
 
-/*
-
-	4. Caption
-
- */
 .pswp__caption {
   position: absolute;
   left: 0;
@@ -66481,18 +66214,10 @@ a.pswp__share--download:hover {
   display: none;
 }
 
-/* Fake caption element, used to calculate height of next/prev image */
 .pswp__caption--fake {
   visibility: hidden;
 }
 
-/*
-
-	5. Loading indicator (preloader)
-
-	You can play with it here - http://codepen.io/dimsemenov/pen/yyBWoR
-
- */
 .pswp__preloader {
   width: 44px;
   height: 44px;
@@ -66516,11 +66241,6 @@ a.pswp__share--download:hover {
 
 .pswp__preloader--active {
   opacity: 1;
-}
-
-.pswp__preloader--active .pswp__preloader__icn {
-  /* We use .gif in browsers that don't support CSS animation */
-  background: url(../img/preloader.html) 0 0 no-repeat;
 }
 
 .pswp--css_animation .pswp__preloader--active {
@@ -66551,10 +66271,6 @@ a.pswp__share--download:hover {
 }
 
 .pswp--css_animation .pswp__preloader__cut {
-  /* 
-  	The idea of animating inner circle is based on Polymer ("material") loading indicator 
-  	 by Keanu Lee https://blog.keanulee.com/2014/10/20/the-tale-of-three-spinners.html
-  */
   position: relative;
   width: 7px;
   height: 14px;
@@ -66681,12 +66397,6 @@ a.pswp__share--download:hover {
   }
 }
 
-/*
-
-	6. Additional styles
-
- */
-/* root element of UI */
 .pswp__ui {
   -webkit-font-smoothing: auto;
   visibility: visible;
@@ -66694,7 +66404,6 @@ a.pswp__share--download:hover {
   z-index: 1550;
 }
 
-/* top black bar with buttons and "1 of X" indicator */
 .pswp__top-bar {
   position: absolute;
   left: 0;
@@ -66714,7 +66423,6 @@ a.pswp__share--download:hover {
   transition: opacity 333ms cubic-bezier(0.4, 0, 0.22, 1);
 }
 
-/* pswp--has_mouse class is added only when two subsequent mousemove events occur */
 .pswp--has_mouse .pswp__button--arrow--left,
 .pswp--has_mouse .pswp__button--arrow--right {
   visibility: visible;
@@ -66725,13 +66433,11 @@ a.pswp__share--download:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* pswp__ui--fit class is added when main image "fits" between top bar and bottom bar (caption) */
 .pswp__ui--fit .pswp__top-bar,
 .pswp__ui--fit .pswp__caption {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* pswp__ui--idle class is added when mouse isn't moving for several seconds (JS option timeToIdle) */
 .pswp__ui--idle .pswp__top-bar {
   opacity: 0;
 }
@@ -66741,19 +66447,13 @@ a.pswp__share--download:hover {
   opacity: 0;
 }
 
-/*
-	pswp__ui--hidden class is added when controls are hidden
-	e.g. when user taps to toggle visibility of controls
-*/
 .pswp__ui--hidden .pswp__top-bar,
 .pswp__ui--hidden .pswp__caption,
 .pswp__ui--hidden .pswp__button--arrow--left,
 .pswp__ui--hidden .pswp__button--arrow--right {
-  /* Force paint & create composition layer for controls. */
   opacity: 0.001;
 }
 
-/* pswp__ui--one-slide class is added when there is just one item in gallery */
 .pswp__ui--one-slide .pswp__button--arrow--left,
 .pswp__ui--one-slide .pswp__button--arrow--right,
 .pswp__ui--one-slide .pswp__counter {
@@ -66767,7 +66467,3 @@ a.pswp__share--download:hover {
 .pswp--minimal--dark .pswp__top-bar {
   background: none;
 }
-
-/* ------------------------------------------------*/
-/* PhotoSwipe Gallery End */
-/* ------------------------------------------------*/
