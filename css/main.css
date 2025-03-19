@@ -4910,11 +4910,13 @@ form textarea:required:valid {
   position: fixed;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.9);
   padding: 2.4rem;
   border-radius: 1.2rem;
-  z-index: 12;
+  z-index: 13;
   text-align: center;
 }
 
@@ -4935,11 +4937,17 @@ form textarea:required:valid {
   height: 2rem;
   border-radius: 50%;
   pointer-events: none;
-  z-index: 11;
+  z-index: 12;
+  -webkit-box-shadow: 0 0 2rem var(--accent),
+    0 0 6rem var(--accent),
+    0 0 100rem var(--accent);
   box-shadow: 0 0 2rem var(--accent),
     0 0 6rem var(--accent),
     0 0 100rem var(--accent);
+  -webkit-animation: colors 5s infinite;
   animation: colors 5s infinite;
+  -webkit-transform: translate(-30%, -30%);
+  -ms-transform: translate(-30%, -30%);
   transform: translate(-30%, -30%);
   display: none;
 }
@@ -4955,11 +4963,17 @@ form textarea:required:valid {
 }
 
 img[data-src] {
+  -webkit-filter: blur(1rem);
   filter: blur(1rem);
+  -webkit-transition: -webkit-filter 1s ease-in-out;
+  transition: -webkit-filter 1s ease-in-out;
+  -o-transition: filter 1s ease-in-out;
   transition: filter 1s ease-in-out;
+  transition: filter 1s ease-in-out, -webkit-filter 1s ease-in-out;
 }
 
 img[data-src].lazyloaded {
+  -webkit-filter: blur(0);
   filter: blur(0);
 }
 
@@ -4992,6 +5006,8 @@ img[data-src].lazyloaded {
   background-color: #ff0000;
   color: var(--t-per-bright-light);
   font-weight: bold;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
   z-index: 2;
 }
@@ -5005,8 +5021,15 @@ img[data-src].lazyloaded {
 .content__package {
   padding: 3rem 1.9rem 0;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   height: 100%;
 }
@@ -5044,14 +5067,17 @@ img[data-src].lazyloaded {
 
 .content__package ul li {
   font-size: 1.7rem !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   font-size: 2rem;
   margin: 0 0 1.6rem 0;
 }
 
 .content__package ul li i {
-
   margin: 0 0.8rem 0 0;
   position: relative;
   top: 0.3rem;
@@ -5066,6 +5092,8 @@ img[data-src].lazyloaded {
 
 .accordion {
   color: var(--t-medium);
+  background: -webkit-gradient(linear, left top, right top, from(var(--stroke-controls)), to(var(--stroke-controls))), -webkit-gradient(linear, left top, right top, from(var(--accent)), to(var(--secondary)));
+  background: -o-linear-gradient(left, var(--stroke-controls), var(--stroke-controls)), -o-linear-gradient(left, var(--accent), var(--secondary));
   background: linear-gradient(to right, var(--stroke-controls), var(--stroke-controls)), linear-gradient(to right, var(--accent), var(--secondary));
   background-size: 100% 0.1rem, 0 0.1rem;
   background-position: 100% 100%, 0 100%;
@@ -5085,13 +5113,23 @@ img[data-src].lazyloaded {
   border: none;
   background: none;
   outline: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .container__question {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 1.6rem;
 }
@@ -5099,7 +5137,6 @@ img[data-src].lazyloaded {
 .accordion button .Badges {
   background-color: var(--base);
   border: 0.1rem solid var(--stroke-elements);
-  -moz-border-radius: var(--_radius-xl);
   border-radius: var(--_radius-l);
   padding: 0.2rem 2rem;
   font: normal 400 2.4rem / 1.4 var(--_font-default);
@@ -5122,6 +5159,8 @@ img[data-src].lazyloaded {
 }
 
 .accordion button .icon i {
+  -webkit-transition: opacity 200ms ease;
+  -o-transition: opacity 200ms ease;
   transition: opacity 200ms ease;
 }
 
@@ -5145,6 +5184,8 @@ img[data-src].lazyloaded {
   max-height: 0;
   overflow: hidden;
   opacity: 0;
+  -webkit-transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  -o-transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
   transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
 }
 
@@ -5157,6 +5198,8 @@ img[data-src].lazyloaded {
   opacity: 0;
   max-height: 0;
   overflow: hidden;
+  -webkit-transition: opacity 200ms linear, max-height 200ms linear;
+  -o-transition: opacity 200ms linear, max-height 200ms linear;
   transition: opacity 200ms linear, max-height 200ms linear;
   will-change: opacity, max-height;
 }
@@ -5200,14 +5243,17 @@ img[data-src].lazyloaded {
 }
 
 .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .blog-card {
   background-color: var(--base);
   border: 1px solid var(--stroke-elements);
-  -moz-border-radius: var(--_radius-xl);
   border-radius: var(--_radius-xl);
 }
 
@@ -5276,6 +5322,8 @@ img[data-src].lazyloaded {
 
 .sub-bg {
   background-color: var(--base);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -5344,8 +5392,14 @@ only screen and (min-width: 768px) {
 }
 
 .error__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   text-align: center;
   height: 100vh;
@@ -5376,18 +5430,27 @@ div#storyly-container:first-of-type {
 }
 
 #userwayAccessibilityIcon {
+  background: -o-linear-gradient(315deg, var(--accent) 0%, var(--secondary) 100%) !important;
   background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%) !important;
-  z-index: 1;
+}
+
+body .uwy,
+.uwy {
+  z-index: 11 !important;
 }
 
 body .uwy.userway_p1 .userway_buttons_wrapper {
   top: 90% !important;
+  -webkit-transform: translate(-95%) scale(0.9) !important;
+  -ms-transform: translate(-95%) scale(0.9) !important;
   transform: translate(-95%) scale(0.9) !important;
 }
 
 @media only screen and (min-width: 406px) and (max-width: 600px) {
   body .uwy.userway_p1 .userway_buttons_wrapper {
     top: 1% !important;
+    -webkit-transform: translate(-80%) scale(0.7) !important;
+    -ms-transform: translate(-80%) scale(0.7) !important;
     transform: translate(-80%) scale(0.7) !important;
   }
 }
