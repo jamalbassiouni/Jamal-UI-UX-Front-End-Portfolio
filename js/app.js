@@ -76,32 +76,30 @@ storylyElement.init({
   token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NfaWQiOjEzNDc1LCJhcHBfaWQiOjIwOTgzLCJpbnNfaWQiOjIzNTU1fQ.FRpPMAahn1B_tIRrNmFQ6y9j3xw-ud63GCoWwKucQlU", // استبدل بالرمز الخاص بك
 });
 
-// window.addEventListener("load", () => {
-//   const popup = document.getElementById("popup");
-//   popup.style.display = "block";
-//   setTimeout(() => {
-//     popup.style.display = "none";
-//   }, 6000);
-// });
+window.addEventListener("load", () => {
+    setTimeout(() => {
+      document.getElementById("popup").style.display = "none";
+    }, 3500);
+});
 
-// const cursor = document.querySelector(".cursor");
-// window.addEventListener("load", () => {
-//   let x = window.innerWidth / 2;
-//   let y = window.innerHeight / 2;
-//   cursor.style.left = x + "px";
-//   cursor.style.top = y + "px";
-//   cursor.style.display = "block";
-// });
-// document.addEventListener("mousemove", (e) => {
-//   let x = e.clientX;
-//   let y = e.clientY;
-//   cursor.style.left = x + "px";
-//   cursor.style.top = y + "px";
-//   cursor.style.display = "block";
-// });
-// document.addEventListener("mouseleave", () => {
-//   cursor.style.display = "none";
-// });
+const cursor = document.querySelector(".cursor");
+window.addEventListener("load", () => {
+  let x = window.innerWidth / 2;
+  let y = window.innerHeight / 2;
+  cursor.style.left = x + "px";
+  cursor.style.top = y + "px";
+  cursor.style.display = "block";
+});
+document.addEventListener("mousemove", (e) => {
+  let x = e.clientX;
+  let y = e.clientY;
+  cursor.style.left = x + "px";
+  cursor.style.top = y + "px";
+  cursor.style.display = "block";
+});
+document.addEventListener("mouseleave", () => {
+  cursor.style.display = "none";
+});
 
 const items = document.querySelectorAll(".accordion button");
 function toggleAccordion() {
