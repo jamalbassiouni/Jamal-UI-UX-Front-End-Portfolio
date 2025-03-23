@@ -3899,6 +3899,32 @@ form textarea:required:valid {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .ordering-one {
+    order: 1;
+  }
+
+  .ordering-two {
+    order: 3;
+  }
+
+  .ordering-three {
+    order: 5;
+  }
+
+  .ordering-four {
+    order: 2;
+  }
+
+  .ordering-five {
+    order: 4;
+  }
+
+  .ordering-six {
+    order: 6;
+  }
+}
+
 .gallery__item {
   position: relative;
 }
@@ -3991,7 +4017,7 @@ form textarea:required:valid {
   align-items: center;
   height: 3.4rem;
   padding: 0 1.4rem;
-  margin: 0.5rem 1rem 0.5rem 0;
+  margin: 0.5rem 1rem -0.8rem -1rem;
   -moz-border-radius: var(--_radius-s);
   border-radius: var(--_radius-s);
   font: normal 400 1.5rem/1 var(--_font-default);
@@ -4544,8 +4570,21 @@ form textarea:required:valid {
 }
 
 .testimonials-descr {
-  height: 12.5rem;
+  height: 14rem;
   overflow: hidden;
+}
+
+@media only screen and (max-width: 577px) {
+  .testimonials-descr {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .testimonials-descr {
+    height: 12.5rem;
+    overflow: hidden;
+  }
 }
 
 @media only screen and (min-width: 1400px) {

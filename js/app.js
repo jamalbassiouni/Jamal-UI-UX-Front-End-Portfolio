@@ -365,7 +365,7 @@ $(function () {
       },
     });
   }
-
+  
   if (!toolsSlider) {
     const swiper = new Swiper(".swiper-testimonials", {
       slidesPerView: 1,
@@ -428,8 +428,7 @@ $(function () {
     });
   }
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const links = document.querySelectorAll(".testimonials-card__btnholder a");
+    const links = document.querySelectorAll(".testimonials-btn a");
 
     links.forEach((link) => {
       link.addEventListener("click", function (event) {
@@ -448,11 +447,10 @@ $(function () {
 
           setTimeout(() => {
             targetElement.classList.remove("highlighted-project");
-          }, 3000);
+          }, 3500);
         }
       });
     });
-  });
 
   $("#contact-form").submit(function () {
     var th = $(this);
