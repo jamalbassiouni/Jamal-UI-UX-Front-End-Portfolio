@@ -5471,6 +5471,7 @@ div#storyly-container:first-of-type {
 #userwayAccessibilityIcon {
   background: -o-linear-gradient(315deg, var(--accent) 0%, var(--secondary) 100%) !important;
   background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%) !important;
+  border-radius: 50%;
 }
 
 body .uwy,
@@ -5492,4 +5493,9 @@ body .uwy.userway_p1 .userway_buttons_wrapper {
     -ms-transform: translate(-80%) scale(0.7) !important;
     transform: translate(-80%) scale(0.7) !important;
   }
+}
+
+.hidden-text {
+  overflow: hidden;
+  padding: 10rem 0 0 0;
 }

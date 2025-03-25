@@ -244,25 +244,25 @@ $(function () {
       gsap.set(batch, { opacity: 0, y: 100, overwrite: true }),
   });
 
-    gsap.set(".animate-card-3", { y: 50, opacity: 0 });
-    ScrollTrigger.batch(".animate-card-3", {
-      interval: 0.1,
-      batchMax: 3,
-      duration: 3,
-      onEnter: (batch) =>
-        gsap.to(batch, {
-          opacity: 1,
-          y: 0,
-          ease: "sine",
-          stagger: { each: 0.15, grid: [1, 3] },
-          overwrite: true,
-        }),
-      onLeave: (batch) => gsap.set(batch, { opacity: 1, y: 0, overwrite: true }),
-      onEnterBack: (batch) =>
-        gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15, overwrite: true }),
-      onLeaveBack: (batch) =>
-        gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
-    });
+  gsap.set(".animate-card-3", { y: 50, opacity: 0 });
+  ScrollTrigger.batch(".animate-card-3", {
+    interval: 0.1,
+    batchMax: 3,
+    duration: 3,
+    onEnter: (batch) =>
+      gsap.to(batch, {
+        opacity: 1,
+        y: 0,
+        ease: "sine",
+        stagger: { each: 0.15, grid: [1, 3] },
+        overwrite: true,
+      }),
+    onLeave: (batch) => gsap.set(batch, { opacity: 1, y: 0, overwrite: true }),
+    onEnterBack: (batch) =>
+      gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15, overwrite: true }),
+    onLeaveBack: (batch) =>
+      gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
+  });
 
   gsap.set(".animate-card-5", { y: 50, opacity: 0 });
   ScrollTrigger.batch(".animate-card-5", {
@@ -365,7 +365,7 @@ $(function () {
       },
     });
   }
-  
+
   if (!toolsSlider) {
     const swiper = new Swiper(".swiper-testimonials", {
       slidesPerView: 1,
@@ -428,29 +428,29 @@ $(function () {
     });
   }
 
-    const links = document.querySelectorAll(".testimonials-btn a");
+  const links = document.querySelectorAll(".testimonials-btn a");
 
-    links.forEach((link) => {
-      link.addEventListener("click", function (event) {
-        const targetId = this.getAttribute("href").substring(1);
-        const targetElement = document.getElementById(targetId);
+  links.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      const targetId = this.getAttribute("href").substring(1);
+      const targetElement = document.getElementById(targetId);
 
-        if (targetElement) {
-          event.preventDefault();
-          window.location.hash = targetId;
+      if (targetElement) {
+        event.preventDefault();
+        window.location.hash = targetId;
 
+        targetElement.classList.remove("highlighted-project");
+        setTimeout(
+          () => targetElement.classList.add("highlighted-project"),
+          100
+        );
+
+        setTimeout(() => {
           targetElement.classList.remove("highlighted-project");
-          setTimeout(
-            () => targetElement.classList.add("highlighted-project"),
-            100
-          );
-
-          setTimeout(() => {
-            targetElement.classList.remove("highlighted-project");
-          }, 3500);
-        }
-      });
+        }, 3500);
+      }
     });
+  });
 
   $("#contact-form").submit(function () {
     var th = $(this);
@@ -625,13 +625,22 @@ document.addEventListener("DOMContentLoaded", function () {
   script.src = "https://cdn.userway.org/widget.js";
 
   script.onload = function () {
-    var interval = setInterval(function () {
-      var userWayIcon = document.querySelector("#userwayAccessibilityIcon");
-      if (userWayIcon) {
-        userWayIcon.style.background = "";
-        clearInterval(interval);
-      }
-    }, 100);
+    var observer = new MutationObserver(function (mutations) {
+      mutations.forEach(function (mutation) {
+        mutation.addedNodes.forEach(function (node) {
+          if (node.nodeName === "IMG" && node.getAttribute("data-uw-rm-ignore") !== null) {
+            node.setAttribute("width", "1");
+            node.setAttribute("height", "1");
+          }
+
+          if (node.classList.contains("ui_w")) {
+            node.setAttribute("id", "userwayAccessibilityIcon");
+          }
+        });
+      });
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
   };
 
   document.head.appendChild(script);
