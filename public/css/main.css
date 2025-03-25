@@ -4030,7 +4030,12 @@ form textarea:required:valid {
   background-color: var(--base-opp);
   color: var(--t-opp-bright);
 }
-
+.gallery__descr .rounded-tag {
+  opacity: 0;
+}
+.pswp--open .rounded-tag {
+  opacity: 1;
+}
 @media only screen and (min-width: 1400px) {
   .gallery__descr {
     position: absolute;
