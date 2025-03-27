@@ -26,22 +26,6 @@ document.addEventListener("mouseleave", () => {
   cursor.style.display = "none";
 });
 
-const storylyContainer = document.getElementById("storyly-container");
-
-const storylyDiv = document.createElement("div");
-storylyDiv.style.position = "relative";
-storylyDiv.style.width = "360px";
-storylyDiv.style.height = "640px";
-storylyContainer.appendChild(storylyDiv);
-
-const storylyElement = document.createElement("storyly-web");
-storylyDiv.appendChild(storylyElement);
-
-storylyElement.init({
-  token:
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NfaWQiOjEzNDc1LCJhcHBfaWQiOjIwOTgzLCJpbnNfaWQiOjIzNTU1fQ.FRpPMAahn1B_tIRrNmFQ6y9j3xw-ud63GCoWwKucQlU",
-});
-
 let valueDisplays = document.querySelectorAll(".move");
 let interval = 5000;
 function checkIfInView() {
@@ -633,10 +617,10 @@ document.addEventListener("DOMContentLoaded", function () {
             node.setAttribute("height", "1");
           }
 
-          if (node.classList.contains("ui_w")) {
+          if (node.nodeType === 1 && node.classList.contains("ui_w")) {
             node.setAttribute("id", "userwayAccessibilityIcon");
           }
-        });
+                  });
       });
     });
 
@@ -644,4 +628,8 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   document.head.appendChild(script);
+});
+
+document.getElementById("myButton").addEventListener("click", function() {
+  window.location.href = "https://www.google.co.uk/";
 });
