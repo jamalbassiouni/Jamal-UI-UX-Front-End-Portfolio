@@ -5066,7 +5066,7 @@ img[data-src].lazyloaded {
 }
 
 .border {
-  border: 1px solid var(--t-per-bright-light) !important;
+  border: 1px solid var(--base-opp) !important;
   border-radius: 2rem;
   width: 90%;
   margin: 1.5rem auto;
