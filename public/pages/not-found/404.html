@@ -9,23 +9,29 @@
     Oops! This page does not exist. Explore my UI/UX and Front-end projects through the homepage to see my work.
     " />
   <meta name="robots" content="noindex, follow" />
-  <link rel="canonical" href="https://yourwebsite.web.app/" />
+  <link rel="canonical" href="https://jamal-bassiouni-portfolio.web.app/" />
   <meta property="og:title" content="Jamal Bassiouni | 404 - Page Not Found" />
   <meta property="og:description"
     content="Oops! This page does not exist. Explore my UI/UX and Front-end projects through the homepage to see my work." />
-  <meta property="og:image" content="../../img/favicon/404.ico" />
-  <meta property="og:url" content="https://your-portfolio.com" />
+  <meta property="og:image" content="https://jamal-bassiouni-portfolio.web.app/img/avatars/jamal.webp?v=1" />
+  <meta property="og:url" content="https://jamal-bassiouni-portfolio.web.app/" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Jamal's Portfolio" />
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#dcdce7" />
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#111111" />
   <meta name="msapplication-navbutton-color" content="#111111" />
-  <meta name="author" content="Jamal Bassiouni | UI/UX & Front-End Portfolio" />
-  <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/404.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/404.ico" />
-  <link rel="stylesheet" href="../../css/loader.css" />
-  <link rel="stylesheet" type="text/css" href="../../css/plugins.css" />
-  <link rel="stylesheet" type="text/css" href="../../css//main.css" />
+  <meta name="author" content="Jamal Bassiouni | UI/UX Designer & Front-End Developer" />
+  <link rel="icon" href="../../img/favicon/logo.ico" />
+  <link rel="apple-touch-icon" href="../../img/favicon/logo.ico" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap">
+  </noscript>
+  <link rel="stylesheet" href="../../css/loader.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="../../css/plugins.css" media="print" onload="this.media='all'">
+  <link rel="preload" href="../../css/main.css" as="style" />
+  <link rel="stylesheet" href="../../css/main.css" />
 </head>
 
 <body>
@@ -43,37 +49,37 @@
       <nav id="menu" class="menu">
         <ul class="menu__list d-flex justify-content-start">
           <li class="menu__item">
-            <a class="menu__link btn" href="../../index.html#about">
+            <a class="menu__link btn" href="../../index.html#about" aria-label="about-me">
               <span class="menu__caption">About Me</span>
               <i class="ph-bold ph-user"></i>
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link btn" href="../../index.html#services">
+            <a class="menu__link btn" href="../../index.html#services" aria-label="services">
               <span class="menu__caption">Services</span>
               <i class="ph-bold ph-squares-four"></i>
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link btn" href="../../index.html#portfolio">
+            <a class="menu__link btn" href="../../index.html#portfolio" aria-label="portfolio">
               <span class="menu__caption">Portfolio</span>
               <i class="fa-regular fa-folder-open"></i>
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link btn" href="../../index.html#resume">
+            <a class="menu__link btn" href="../../index.html#resume" aria-label="resume">
               <span class="menu__caption">Resume</span>
               <i class="fa-regular fa-newspaper"></i>
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link btn" href="../../index.html#explore">
+            <a class="menu__link btn" href="../../index.html#explore" aria-label="explore">
               <span class="menu__caption">Explore</span>
               <i class="fa-regular fa-compass"></i>
             </a>
           </li>
           <li class="menu__item">
-            <a class="menu__link btn" href="../../index.html#contact">
+            <a class="menu__link btn" href="../../index.html#contact" aria-label="contact">
               <span class="menu__caption">Contact</span>
               <i class="fa-regular fa-address-card"></i>
             </a>
@@ -86,8 +92,10 @@
       <button id="color-switcher" class="color-switcher header__switcher btn" type="button" role="switch"
         aria-label="light/dark mode" aria-checked="true"></button>
       <a id="notify-trigger" class="header__trigger btn"
-        href="https://mail.google.com/mail/?view=cm&fs=1&to=jamalbassiounifreelancehub@gmail.com" target="_blank">
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=jamalbassiounifreelancehub@gmail.com"
+        rel="noopener noreferrer" target="_blank">
         <span class="trigger__caption">Email Me</span>
+        <i class="visually-hidden">to send your order</i>
         <i class="ph-bold ph-chat-dots"></i>
       </a>
     </div>
@@ -103,7 +111,7 @@
     <div class="avatar__container d-flex flex-column justify-content-lg-between">
       <div class="avatar__block">
         <div class="avatar__logo d-flex align-items-center">
-          <a href="/index.html">
+          <a href="/index.html" aria-label="click-logo">
             <figure class="logo__image">
               <svg xmlns="http://www.w3.org/2000/svg" width="305" height="270" viewBox="0 0 305 270" fill="none"
                 class="gradient-fill">
@@ -131,7 +139,8 @@
           </div>
         </div>
         <figure class="avatar__image">
-          <img data-src="../../img/avatars/jamal.webp" class="lazyload" width="1" height="1" alt="Jamal - Personal photo" />
+          <img data-src="../../img/avatars/jamal.webp" class="lazyload" width="1" height="1"
+            alt="Jamal - Personal photo" />
         </figure>
       </div>
       <div class="avatar__block">
@@ -146,29 +155,35 @@
         <div class="avatar__socials">
           <ul class="socials-square d-flex justify-content-between">
             <li class="socials-square__item">
-              <!-- <a class="socials-square__link btn" href="https://dribbble.com/" target="_blank"><i
-                  class="ph-bold ph-dribbble-logo"></i></a> -->
-            </li>
-            <li class="socials-square__item"></li>
-            <li class="socials-square__item">
-              <!-- <a class="socials-square__link btn" href="https://www.instagram.com/" target="_blank"><i
-                  class="ph-bold ph-instagram-logo"></i></a> -->
+              <a class="socials-square__link btn" href="https://www.facebook.com/people/Jamal-uix-dev/61569819411505/"
+                target="_blank" rel="noopener noreferrer" aria-label="facebook"> <i class="fa-brands fa-facebook-f"></i>
+              </a>
             </li>
             <li class="socials-square__item">
-              <!-- <a class="socials-square__link btn" href="https://www.twitch.tv/" target="_blank"><i
-                  class="ph-bold ph-twitch-logo"></i></a> -->
+              <a class="socials-square__link btn" href="https://www.instagram.com/jamal_uix_dev/" target="_blank"
+                rel="noopener noreferrer" aria-label="instagram"> <i class="ph-bold ph-instagram-logo"></i>
+              </a>
             </li>
             <li class="socials-square__item">
-              <!-- <a class="socials-square__link btn" href="https://www.pinterest.com/" target="_blank"><i -->
-              <!-- class="ph-bold ph-pinterest-logo"></i></a> -->
+              <a class="socials-square__link btn" href="https://x.com/Frontend_UIUX" target="_blank"
+                rel="noopener noreferrer" aria-label="x">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </li>
+            <li class="socials-square__item">
+              <a class="socials-square__link btn" href="http://www.linkedin.com/in/jamalbassiouni-uix-dev"
+                target="_blank" rel="noopener noreferrer" aria-label="linkedin"> <i
+                  class="fa-brands fa-linkedin-in"></i>
+              </a>
             </li>
           </ul>
         </div>
 
         <div class="avatar__btnholder">
-          <a class="btn btn-default btn-default-ws btn-fullwidth btn-hover btn-hover-accent"
-            href="https://api.whatsapp.com/message/OUS3AWBZSHQ4O1?autoload=1&app_absent=0" target="_blank">
-            <span class="btn-caption">Connect on Whatsapp</span>
+          <a class="btn btn-default btn-default-ws btn-fullwidth btn-hover btn-hover-accent btn-whatsapp"
+            href="https://api.whatsapp.com/message/OUS3AWBZSHQ4O1?autoload=1&app_absent=0" rel="noopener noreferrer"
+            target="_blank">
+            <span>Connect on Whatsapp</span>
           </a>
         </div>
       </div>
@@ -425,7 +440,7 @@
   </main>
 
   <script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script>
-  <script src="../../js/libs.min.js"></script>
+  <script defer src="../../js/libs.min.js"></script>
   <script defer src="../../js/app.js"></script>
 </body>
 

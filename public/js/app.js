@@ -8,23 +8,21 @@ window.addEventListener("load", () => {
 });
 
 const cursor = document.querySelector(".cursor");
-window.addEventListener("load", () => {
-  let x = window.innerWidth / 2;
-  let y = window.innerHeight / 2;
-  cursor.style.left = x + "px";
-  cursor.style.top = y + "px";
-  cursor.style.display = "block";
-});
+
+let mouseX = 0, mouseY = 0;
 document.addEventListener("mousemove", (e) => {
-  let x = e.clientX;
-  let y = e.clientY;
-  cursor.style.left = x + "px";
-  cursor.style.top = y + "px";
-  cursor.style.display = "block";
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+  cursor.style.opacity = "1";
 });
 document.addEventListener("mouseleave", () => {
-  cursor.style.display = "none";
+  cursor.style.opacity = "0";
 });
+function updateCursor() {
+  requestAnimationFrame(updateCursor);
+  cursor.style.transform = `translate(${mouseX - 10}px, ${mouseY - 10}px)`;
+}
+updateCursor();
 
 let valueDisplays = document.querySelectorAll(".move");
 let interval = 5000;
@@ -620,7 +618,7 @@ document.addEventListener("DOMContentLoaded", function () {
           if (node.nodeType === 1 && node.classList.contains("ui_w")) {
             node.setAttribute("id", "userwayAccessibilityIcon");
           }
-                  });
+        });
       });
     });
 
@@ -628,8 +626,4 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   document.head.appendChild(script);
-});
-
-document.getElementById("myButton").addEventListener("click", function() {
-  window.location.href = "https://www.google.co.uk/";
 });
