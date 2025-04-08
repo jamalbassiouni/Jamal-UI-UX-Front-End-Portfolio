@@ -3,7 +3,7 @@ window.addEventListener("load", () => {
   if (popup) {
     setTimeout(() => {
       popup.style.display = "none";
-    }, 3500);
+    }, 4500);
   }
 });
 
@@ -59,9 +59,7 @@ window.addEventListener("scroll", checkIfInView);
 const sections = document.querySelectorAll(".inner");
 const navLinks = document.querySelectorAll("header nav a");
 const footer = document.querySelector("footer");
-
 const isMobileView = window.matchMedia("(max-width: 992px)");
-
 const updateActiveSection = () => {
   let activeId = "";
   let viewportHeight = window.innerHeight;
@@ -112,12 +110,11 @@ $(function () {
   "use strict";
 
   gsap.registerPlugin(ScrollTrigger);
-
-  const content = document.querySelector("body");
   const images = document.querySelectorAll("img:not(.lazyload)");
   const imgLoad = imagesLoaded(images);
+
   document.body.style.overflow = "hidden";
-  imgLoad.on("done", (instance) => {
+  imgLoad.on("done", () => {
     document.getElementById("loaderContent").classList.add("fade-out");
     setTimeout(() => {
       document.getElementById("loader").classList.add("loaded");
@@ -137,8 +134,7 @@ $(function () {
           stagger: { each: 0.15, grid: [1, 4] },
           overwrite: true,
         }),
-      onLeave: (batch) =>
-        gsap.set(batch, { opacity: 1, y: 0, overwrite: true }),
+      onLeave: (batch) => gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
       onEnterBack: (batch) =>
         gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15, overwrite: true }),
       onLeaveBack: (batch) =>
@@ -207,6 +203,7 @@ $(function () {
   });
 
   gsap.set(".animate-card-2", { y: 100, opacity: 0 });
+
   ScrollTrigger.batch(".animate-card-2", {
     interval: 0.1,
     batchMax: 2,
@@ -219,11 +216,10 @@ $(function () {
         stagger: { each: 0.15, grid: [1, 2] },
         overwrite: true,
       }),
-    onLeave: (batch) => gsap.set(batch, { opacity: 1, y: 0, overwrite: true }),
+    onLeave: (batch) => gsap.set(batch, { opacity: 0, y: 100, overwrite: true }),
     onEnterBack: (batch) =>
       gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15, overwrite: true }),
-    onLeaveBack: (batch) =>
-      gsap.set(batch, { opacity: 0, y: 100, overwrite: true }),
+    onLeaveBack: (batch) => gsap.set(batch, { opacity: 0, y: 100, overwrite: true }),
   });
 
   gsap.set(".animate-card-3", { y: 50, opacity: 0 });
@@ -312,7 +308,6 @@ $(function () {
     });
 
   const toolsSlider = document.querySelector("tools-slider");
-  const testimonialsSlider = document.querySelector("testimonials-slider");
 
   if (!toolsSlider) {
     const swiper = new Swiper(".swiper-tools", {
@@ -434,30 +429,6 @@ $(function () {
     });
   });
 
-  $("#contact-form").submit(function () {
-    var th = $(this);
-    $.ajax({
-      type: "POST",
-      url: "mail.php",
-      data: th.serialize(),
-    }).done(function () {
-      $(".contact").find(".form").addClass("is-hidden");
-      $(".contact").find(".form__reply").addClass("is-visible");
-      setTimeout(function () {
-        $(".contact").find(".form__reply").removeClass("is-visible");
-        $(".contact").find(".form").delay(300).removeClass("is-hidden");
-        th.trigger("reset");
-      }, 5000);
-    });
-    return false;
-  });
-
-  if (!Modernizr.svg) {
-    $("img[src*='svg']").attr("src", function () {
-      return $(this).attr("src").replace(".svg", ".png");
-    });
-  }
-
   try {
     $.browserSelector();
     if ($("html").hasClass("chrome")) {
@@ -486,18 +457,16 @@ $(function () {
     /MSIE 9/i.test(navigator.userAgent) ||
     /rv:11.0/i.test(navigator.userAgent) ||
     /MSIE 10/i.test(navigator.userAgent) ||
-    /Edge\/\d+/.test(navigator.userAgent);
+    /Edge\/\d+/i.test(navigator.userAgent) ||
+    /Edg\//i.test(navigator.userAgent);
 
   $(".gallery__link").each(function () {
-    $(this)
-      .append('<div class="picture"></div>')
-      .children(".picture")
-      .css({ "background-image": "url(" + $(this).attr("data-image") + ")" });
+    const imageUrl = $(this).data("image");
+    $(this).append(`<div class="picture" style="background-image: url(${imageUrl})"></div>`);
   });
 });
 
 const themeBtn = document.querySelector(".color-switcher");
-
 function getCurrentTheme() {
   let theme = window.matchMedia("(prefers-color-scheme: dark)").matches
     ? "dark"
@@ -548,82 +517,55 @@ function toggleAccordion() {
 items.forEach((item) => item.addEventListener("click", toggleAccordion));
 
 document.addEventListener("DOMContentLoaded", function () {
-  const randomX = random(-400, 400);
-  const randomY = random(-200, 200);
-  const randomDelay = random(0, 50);
-  const randomTime = random(20, 40);
-  const randomTime2 = random(5, 12);
-  const randomAngle = random(-30, 150);
+  const random = (min, max, direction = 1) => (min + (max - min) * Math.random()) * direction;
 
   const blurs = gsap.utils.toArray(".blur");
   blurs.forEach((blur) => {
     gsap.set(blur, {
-      x: randomX(-1),
-      y: randomX(1),
-      rotation: randomAngle(-1),
+      x: random(-400, 400),
+      y: random(-200, 200),
+      rotation: random(-30, 150),
     });
 
-    moveX(blur, 1);
-    moveY(blur, -1);
-    rotate(blur, 1);
+    move(blur, "x", random(20, 40), random(-400, 400));
+    move(blur, "y", random(20, 40), random(-200, 200));
+    rotate(blur, random(5, 12), random(-30, 150));
   });
 
-  function rotate(target, direction) {
-    gsap.to(target, randomTime2(), {
-      rotation: randomAngle(direction),
+  function move(target, axis, time, range) {
+    gsap.to(target, time, {
+      [axis]: range,
       ease: Sine.easeInOut,
-      onComplete: rotate,
-      onCompleteParams: [target, direction * -1],
+      onComplete: () => move(target, axis, time, random(-range, range)),
     });
   }
 
-  function moveX(target, direction) {
-    gsap.to(target, randomTime(), {
-      x: randomX(direction),
+  function rotate(target, time, angle) {
+    gsap.to(target, time, {
+      rotation: angle,
       ease: Sine.easeInOut,
-      onComplete: moveX,
-      onCompleteParams: [target, direction * -1],
+      onComplete: () => rotate(target, time, random(-30, 150)),
     });
-  }
-
-  function moveY(target, direction) {
-    gsap.to(target, randomTime(), {
-      y: randomY(direction),
-      ease: Sine.easeInOut,
-      onComplete: moveY,
-      onCompleteParams: [target, direction * -1],
-    });
-  }
-
-  function random(min, max) {
-    const delta = max - min;
-    return (direction = 1) => (min + delta * Math.random()) * direction;
   }
 });
-
 document.addEventListener("DOMContentLoaded", function () {
-  var script = document.createElement("script");
+  const script = document.createElement("script");
   script.defer = true;
   script.src = "https://cdn.userway.org/widget.js";
-
   script.onload = function () {
-    var observer = new MutationObserver(function (mutations) {
-      mutations.forEach(function (mutation) {
-        mutation.addedNodes.forEach(function (node) {
+    new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        mutation.addedNodes.forEach((node) => {
           if (node.nodeName === "IMG" && node.getAttribute("data-uw-rm-ignore") !== null) {
             node.setAttribute("width", "1");
             node.setAttribute("height", "1");
           }
-
           if (node.nodeType === 1 && node.classList.contains("ui_w")) {
             node.setAttribute("id", "userwayAccessibilityIcon");
           }
         });
       });
-    });
-
-    observer.observe(document.body, { childList: true, subtree: true });
+    }).observe(document.body, { childList: true, subtree: true });
   };
-
   document.head.appendChild(script);
 });

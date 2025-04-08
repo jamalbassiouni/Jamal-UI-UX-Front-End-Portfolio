@@ -195,8 +195,6 @@
   background-color: var(--base-tint);
   opacity: 1;
   visibility: visible;
-  -webkit-transition: all var(--_animspeed-slow) ease-in-out;
-  -moz-transition: all var(--_animspeed-slow) ease-in-out;
   transition: all var(--_animspeed-slow) ease-in-out;
 }
 
@@ -212,14 +210,9 @@
   top: 50%;
   bottom: auto;
   right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+  transform: translate3d(-50%, -50%, 0);
   width: 40px;
   height: 60px;
-  -webkit-transition: opacity var(--_animspeed-medium) ease-in-out;
-  -moz-transition: opacity var(--_animspeed-medium) ease-in-out;
   transition: opacity var(--_animspeed-medium) ease-in-out;
   opacity: 1;
 }
@@ -232,101 +225,31 @@
   width: 40px;
   height: 40px;
   background: var(--accent);
-  background: -moz-linear-gradient(315deg, var(--accent) 0%, var(--secondary) 100%);
   background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
-  -webkit-animation: jump 0.5s linear infinite;
-  -moz-animation: jump 0.5s linear infinite;
   animation: jump 0.5s linear infinite;
-  -moz-border-radius: 10px;
   border-radius: 10px;
-}
-
-@-webkit-keyframes jump {
-  17% {
-    border-bottom-right-radius: 10px;
-  }
-
-  25% {
-    -webkit-transform: translateY(9px) rotate(22.5deg);
-    transform: translateY(9px) rotate(22.5deg);
-  }
-
-  50% {
-    -webkit-transform: translateY(18px) scale(1, 0.9) rotate(45deg);
-    transform: translateY(18px) scale(1, 0.9) rotate(45deg);
-    border-bottom-right-radius: 40px;
-  }
-
-  75% {
-    -webkit-transform: translateY(9px) rotate(67.5deg);
-    transform: translateY(9px) rotate(67.5deg);
-  }
-
-  100% {
-    -webkit-transform: translateY(0) rotate(90deg);
-    transform: translateY(0) rotate(90deg);
-  }
-}
-
-@-moz-keyframes jump {
-  17% {
-    -moz-border-radius-bottomright: 10px;
-    border-bottom-right-radius: 10px;
-  }
-
-  25% {
-    -moz-transform: translateY(9px) rotate(22.5deg);
-    transform: translateY(9px) rotate(22.5deg);
-  }
-
-  50% {
-    -moz-transform: translateY(18px) scale(1, 0.9) rotate(45deg);
-    transform: translateY(18px) scale(1, 0.9) rotate(45deg);
-    -moz-border-radius-bottomright: 40px;
-    border-bottom-right-radius: 40px;
-  }
-
-  75% {
-    -moz-transform: translateY(9px) rotate(67.5deg);
-    transform: translateY(9px) rotate(67.5deg);
-  }
-
-  100% {
-    -moz-transform: translateY(0) rotate(90deg);
-    transform: translateY(0) rotate(90deg);
-  }
 }
 
 @keyframes jump {
   17% {
-    -moz-border-radius-bottomright: 10px;
     border-bottom-right-radius: 10px;
   }
 
   25% {
-    -webkit-transform: translateY(9px) rotate(22.5deg);
-    -moz-transform: translateY(9px) rotate(22.5deg);
-    transform: translateY(9px) rotate(22.5deg);
+    transform: translate3d(0, 9px, 0) rotate3d(0, 0, 1, 22.5deg);
   }
 
   50% {
-    -webkit-transform: translateY(18px) scale(1, 0.9) rotate(45deg);
-    -moz-transform: translateY(18px) scale(1, 0.9) rotate(45deg);
-    transform: translateY(18px) scale(1, 0.9) rotate(45deg);
-    -moz-border-radius-bottomright: 40px;
+    transform: translate3d(0, 18px, 0) scale3d(1, 0.9, 1) rotate3d(0, 0, 1, 45deg);
     border-bottom-right-radius: 40px;
   }
 
   75% {
-    -webkit-transform: translateY(9px) rotate(67.5deg);
-    -moz-transform: translateY(9px) rotate(67.5deg);
-    transform: translateY(9px) rotate(67.5deg);
+    transform: translate3d(0, 9px, 0) rotate3d(0, 0, 1, 67.5deg);
   }
 
   100% {
-    -webkit-transform: translateY(0) rotate(90deg);
-    -moz-transform: translateY(0) rotate(90deg);
-    transform: translateY(0) rotate(90deg);
+    transform: translate3d(0, 0, 0) rotate3d(0, 0, 1, 90deg);
   }
 }
 
@@ -337,31 +260,12 @@
   position: absolute;
   top: 49px;
   left: 0;
-  -moz-border-radius: 50%;
   border-radius: 50%;
-  -webkit-animation: shadow 0.5s linear infinite;
-  -moz-animation: shadow 0.5s linear infinite;
   animation: shadow 0.5s linear infinite;
-}
-
-@-webkit-keyframes shadow {
-  50% {
-    -webkit-transform: scale(1.2, 1);
-    transform: scale(1.2, 1);
-  }
-}
-
-@-moz-keyframes shadow {
-  50% {
-    -moz-transform: scale(1.2, 1);
-    transform: scale(1.2, 1);
-  }
 }
 
 @keyframes shadow {
   50% {
-    -webkit-transform: scale(1.2, 1);
-    -moz-transform: scale(1.2, 1);
-    transform: scale(1.2, 1);
+    transform: scale3d(1.2, 1, 1);
   }
 }
