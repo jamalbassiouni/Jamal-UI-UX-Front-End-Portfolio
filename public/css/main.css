@@ -2794,11 +2794,11 @@ form :-ms-input-placeholder {
   padding: 0 1.4rem;
   margin: 0.5rem 1rem 0.5rem 0;
   border-radius: var(--_radius-s);
-  font: normal 400 1.5rem/1 var(--_font-default);
+  font: normal 600 1.6rem/1 var(--_font-default);
   font-variant-numeric: lining-nums;
-  background-color: transparent;
-  border: 1px solid var(--per-stroke-controls);
-  color: var(--t-per-bright-light);
+  background: var(--accent);
+  background: linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
+  color: var(--t-opp-bright);
 }
 
 .pswp__caption__center p {
