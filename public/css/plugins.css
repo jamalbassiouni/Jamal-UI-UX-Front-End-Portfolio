@@ -467,7 +467,7 @@ ul {
 
 @font-face {
   font-family: "Phosphor-Bold";
-  src: url("../fonts/Phosphor/Phosphor-Bold.woff2") format("woff2");
+  src: url("https://res.cloudinary.com/dnlyctyoa/raw/upload/v1746742402/Phosphor-Bold_mvldht.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -547,7 +547,7 @@ ul {
 
 @font-face {
   font-family: "Phosphor-Duotone";
-  src: url("../fonts/Phosphor/Phosphor-Duotone.woff2") format("woff2");
+  src: url("https://res.cloudinary.com/dnlyctyoa/raw/upload/v1746742393/Phosphor-Duotone_rc6axt.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -555,7 +555,7 @@ ul {
 
 @font-face {
   font-family: "Phosphor-Fill";
-  src: url("../fonts/Phosphor/Phosphor-Fill.woff2") format("woff2");
+  src: url("https://res.cloudinary.com/dnlyctyoa/raw/upload/v1746742395/Phosphor-Fill_v95gcl.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -635,7 +635,7 @@ ul {
 
 @font-face {
   font-family: "Phosphor-Light";
-  src: url("../fonts/Phosphor/Phosphor-Light.woff2") format("woff2"), ;
+  src: url("https://res.cloudinary.com/dnlyctyoa/raw/upload/v1746742397/Phosphor-Light_xd5yrr.woff2") format("woff2"), ;
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -643,7 +643,7 @@ ul {
 
 @font-face {
   font-family: "Phosphor";
-  src: url("../fonts/Phosphor/Phosphor.woff2") format("woff2");
+  src: url("https://res.cloudinary.com/dnlyctyoa/raw/upload/v1746742400/Phosphor_fhoofq.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -651,7 +651,7 @@ ul {
 
 @font-face {
   font-family: "Phosphor-Thin";
-  src: url("../fonts/Phosphor/Phosphor-Thin.woff2") format("woff2");
+  src: url("https://res.cloudinary.com/dnlyctyoa/raw/upload/v1746742399/Phosphor-Thin_em9wvh.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -876,7 +876,7 @@ ul {
 
 @font-face {
   font-family: "Font Awesome 6 Free";
-  src: url("../fonts/Fontawesome/fa-solid-900.woff2") format("woff2");
+  src: url("https://res.cloudinary.com/dnlyctyoa/raw/upload/v1746742316/fa-solid-900_c2oefj.woff2") format("woff2");
   font-style: normal;
   font-weight: 900;
   font-display: swap;
@@ -894,7 +894,7 @@ ul {
 
 @font-face {
   font-family: "Font Awesome 6 Free";
-  src: url("../fonts/Fontawesome/fa-regular-400.woff2") format("woff2");
+  src: url("https://res.cloudinary.com/dnlyctyoa/raw/upload/v1746742313/fa-regular-400_dndag5.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -912,7 +912,7 @@ ul {
 
 @font-face {
   font-family: "Font Awesome 6 Brands";
-  src: url("../fonts/Fontawesome/fa-brands-400.woff2") format("woff2");
+  src: url("https://res.cloudinary.com/dnlyctyoa/raw/upload/v1746742317/fa-brands-400_wf9cpq.woff2") format("woff2");
   font-style: normal;
   font-weight: 400;
   font-display: swap;
@@ -1269,7 +1269,7 @@ ul {
 .pswp__button,
 .pswp__button--arrow--left:before,
 .pswp__button--arrow--right:before {
-  background: url(../img/portfolio/default-skin.webp) 0 0 no-repeat;
+  background: url(https://res.cloudinary.com/dnlyctyoa/image/upload/f_auto,q_auto/v1746742011/default-skin_wijsqm.webp) 0 0 no-repeat;
   background-size: 264px 88px;
   width: 44px;
   height: 44px;
@@ -1281,7 +1281,7 @@ ul {
   .pswp--svg .pswp__button,
   .pswp--svg .pswp__button--arrow--left:before,
   .pswp--svg .pswp__button--arrow--right:before {
-    background-image: url(../img/favtools/default-skin.svg);
+    background-image: url(https://res.cloudinary.com/dnlyctyoa/image/upload/v1746741940/default-skin_uask7m.svg);
   }
 
   .pswp--svg .pswp__button--arrow--left,
