@@ -4,20 +4,20 @@ $(function () {
   window.addEventListener("load", () => {
     const popup = document.getElementById("popup");
     if (!popup) return;
+
     const hasVisited = sessionStorage.getItem("hasVisited");
     if (!hasVisited) {
-      popup.style.display = "block";
+      popup.classList.add("show-popup");
       setTimeout(() => {
-        popup.style.display = "none";
+        popup.classList.remove("show-popup");
       }, 4400);
       sessionStorage.setItem("hasVisited", "true");
-    } else {
-      popup.style.display = "none";
     }
   });
 
   const cursor = document.querySelector(".cursor");
-  let mouseX = 0, mouseY = 0;
+  let mouseX = 0,
+    mouseY = 0;
   document.addEventListener("mousemove", (e) => {
     mouseX = e.clientX;
     mouseY = e.clientY;
@@ -114,170 +114,7 @@ $(function () {
   window.addEventListener("scroll", updateActiveSection);
   window.addEventListener("resize", updateActiveSection);
 
-
-
-  // gsap.registerPlugin(ScrollTrigger);
-  // const images = document.querySelectorAll("img:not(.lazyload)");
-  // const imgLoad = imagesLoaded(images);
-
-  // document.body.style.overflow = "hidden";
-  // imgLoad.on("done", () => {
-  //   document.getElementById("loaderContent").classList.add("fade-out");
-  //   setTimeout(() => {
-  //     document.getElementById("loader").classList.add("loaded");
-  //     document.body.style.overflow = "auto";
-  //   }, 300);
-
-  //   gsap.set(".animate-headline", { y: 50, opacity: 0 });
-  //   ScrollTrigger.batch(".animate-headline", {
-  //     interval: 0.1,
-  //     batchMax: 4,
-  //     duration: 6,
-  //     onEnter: (batch) =>
-  //       gsap.to(batch, {
-  //         opacity: 1,
-  //         y: 0,
-  //         ease: "sine",
-  //         stagger: { each: 0.15, grid: [1, 4] },
-  //         overwrite: true,
-  //       }),
-  //     onLeave: (batch) => gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
-  //     onEnterBack: (batch) =>
-  //       gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15, overwrite: true }),
-  //     onLeaveBack: (batch) =>
-  //       gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
-  //   });
-  // });
-
-  // const lenis = new Lenis();
-  // function raf(time) {
-  //   lenis.raf(time);
-  //   requestAnimationFrame(raf);
-  // }
-  // requestAnimationFrame(raf);
-
-  // gsap.to("[data-speed]", {
-  //   y: (i, el) =>
-  //     (1 - parseFloat(el.getAttribute("data-speed"))) *
-  //     ScrollTrigger.maxScroll(window),
-  //   ease: "none",
-  //   scrollTrigger: {
-  //     start: 0,
-  //     end: "max",
-  //     invalidateOnRefresh: true,
-  //     scrub: 0,
-  //   },
-  // });
-
-  // const animateInUp = document.querySelectorAll(".animate-in-up");
-  // animateInUp.forEach((element) => {
-  //   gsap.fromTo(
-  //     element,
-  //     {
-  //       opacity: 0,
-  //       y: 50,
-  //       ease: "sine",
-  //     },
-  //     {
-  //       y: 0,
-  //       opacity: 1,
-  //       scrollTrigger: {
-  //         trigger: element,
-  //         toggleActions: "play none none reverse",
-  //       },
-  //     }
-  //   );
-  // });
-
-  // const animateRotation = document.querySelectorAll(".animate-rotation");
-  // animateRotation.forEach((section) => {
-  //   var value = $(section).data("value");
-  //   gsap.fromTo(
-  //     section,
-  //     {
-  //       ease: "sine",
-  //       rotate: 0,
-  //     },
-  //     {
-  //       rotate: value,
-  //       scrollTrigger: {
-  //         trigger: section,
-  //         scrub: true,
-  //         toggleActions: "play none none reverse",
-  //       },
-  //     }
-  //   );
-  // });
-
-  // gsap.set(".animate-card-2", { y: 100, opacity: 0 });
-
-  // ScrollTrigger.batch(".animate-card-2", {
-  //   interval: 0.1,
-  //   batchMax: 2,
-  //   duration: 6,
-  //   onEnter: (batch) =>
-  //     gsap.to(batch, {
-  //       opacity: 1,
-  //       y: 0,
-  //       ease: "sine",
-  //       stagger: { each: 0.15, grid: [1, 2] },
-  //       overwrite: true,
-  //     }),
-  //   onLeave: (batch) => gsap.set(batch, { opacity: 0, y: 100, overwrite: true }),
-  //   onEnterBack: (batch) =>
-  //     gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15, overwrite: true }),
-  //   onLeaveBack: (batch) => gsap.set(batch, { opacity: 0, y: 100, overwrite: true }),
-  // });
-
-  // gsap.set(".animate-card-3", { y: 50, opacity: 0 });
-  // ScrollTrigger.batch(".animate-card-3", {
-  //   interval: 0.1,
-  //   batchMax: 3,
-  //   duration: 3,
-  //   onEnter: (batch) =>
-  //     gsap.to(batch, {
-  //       opacity: 1,
-  //       y: 0,
-  //       ease: "sine",
-  //       stagger: { each: 0.15, grid: [1, 3] },
-  //       overwrite: true,
-  //     }),
-  //   onLeave: (batch) => gsap.set(batch, { opacity: 1, y: 0, overwrite: true }),
-  //   onEnterBack: (batch) =>
-  //     gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15, overwrite: true }),
-  //   onLeaveBack: (batch) =>
-  //     gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
-  // });
-
-  // gsap.set(".animate-card-5", { y: 50, opacity: 0 });
-  // ScrollTrigger.batch(".animate-card-5", {
-  //   interval: 0.1,
-  //   batchMax: 5,
-  //   delay: 1000,
-  //   onEnter: (batch) =>
-  //     gsap.to(batch, {
-  //       opacity: 1,
-  //       y: 0,
-  //       ease: "sine",
-  //       stagger: { each: 0.15, grid: [1, 5] },
-  //       overwrite: true,
-  //     }),
-  //   onLeave: (batch) => gsap.set(batch, { opacity: 1, y: 0, overwrite: true }),
-  //   onEnterBack: (batch) =>
-  //     gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15, overwrite: true }),
-  //   onLeaveBack: (batch) =>
-  //     gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
-  // });
-
-  // ScrollTrigger.addEventListener("refreshInit", () =>
-  //   gsap.set(".animate-card-2", { y: 0, opacity: 1 })
-  // );
-  // ScrollTrigger.addEventListener("refreshInit", () =>
-  //   gsap.set(".animate-card-3", { y: 0, opacity: 1 })
-  // );
-  // ScrollTrigger.addEventListener("refreshInit", () =>
-  //   gsap.set(".animate-card-5", { y: 0, opacity: 1 })
-  // );
+  gsap.registerPlugin(ScrollTrigger);
 
   const images = document.querySelectorAll("img:not(.lazyload)");
   const imgLoad = imagesLoaded(images);
@@ -288,294 +125,129 @@ $(function () {
       document.getElementById("loader")?.classList.add("loaded");
       document.body.style.overflow = "auto";
     }, 300);
-  });
 
-  // gsap.registerPlugin(ScrollTrigger);
-
-  // // تحديد العناصر المستهدفة
-  // const headlineElements = document.querySelectorAll(".animate-headline");
-  // const card2Elements = document.querySelectorAll(".animate-card-2");
-  // const card3Elements = document.querySelectorAll(".animate-card-3");
-  // const card5Elements = document.querySelectorAll(".animate-card-5");
-
-  // // إذا كانت العناصر موجودة فقط، نطبق عليها التأثيرات
-  // if (headlineElements.length > 0) {
-  //   gsap.set(headlineElements, { y: 50, opacity: 0 });
-  //   ScrollTrigger.batch(headlineElements, {
-  //     interval: 0.1,
-  //     batchMax: 4,
-  //     duration: 6,
-  //     onEnter: (batch) =>
-  //       gsap.to(batch, {
-  //         opacity: 1,
-  //         y: 0,
-  //         ease: "sine",
-  //         stagger: { each: 0.15, grid: [1, 4] },
-  //         overwrite: true,
-  //       }),
-  //     onLeave: (batch) => gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
-  //     onEnterBack: (batch) =>
-  //       gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15, overwrite: true }),
-  //     onLeaveBack: (batch) =>
-  //       gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
-  //   });
-  // }
-
-  // if (card2Elements.length > 0) {
-  //   gsap.set(card2Elements, { y: 100, opacity: 0 });
-  //   ScrollTrigger.batch(card2Elements, {
-  //     interval: 0.1,
-  //     batchMax: 2,
-  //     duration: 6,
-  //     onEnter: (batch) =>
-  //       gsap.to(batch, {
-  //         opacity: 1,
-  //         y: 0,
-  //         ease: "sine",
-  //         stagger: { each: 0.15, grid: [1, 2] },
-  //         overwrite: true,
-  //       }),
-  //     onLeave: (batch) => gsap.set(batch, { opacity: 0, y: 100, overwrite: true }),
-  //     onEnterBack: (batch) =>
-  //       gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15, overwrite: true }),
-  //     onLeaveBack: (batch) =>
-  //       gsap.set(batch, { opacity: 0, y: 100, overwrite: true }),
-  //   });
-  // }
-
-  // if (card3Elements.length > 0) {
-  //   gsap.set(card3Elements, { y: 50, opacity: 0 });
-  //   ScrollTrigger.batch(card3Elements, {
-  //     interval: 0.1,
-  //     batchMax: 3,
-  //     duration: 3,
-  //     onEnter: (batch) =>
-  //       gsap.to(batch, {
-  //         opacity: 1,
-  //         y: 0,
-  //         ease: "sine",
-  //         stagger: { each: 0.15, grid: [1, 3] },
-  //         overwrite: true,
-  //       }),
-  //     onLeave: (batch) => gsap.set(batch, { opacity: 1, y: 0, overwrite: true }),
-  //     onEnterBack: (batch) =>
-  //       gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15, overwrite: true }),
-  //     onLeaveBack: (batch) =>
-  //       gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
-  //   });
-  // }
-
-  // if (card5Elements.length > 0) {
-  //   gsap.set(card5Elements, { y: 50, opacity: 0 });
-  //   ScrollTrigger.batch(card5Elements, {
-  //     interval: 0.1,
-  //     batchMax: 5,
-  //     delay: 1000,
-  //     onEnter: (batch) =>
-  //       gsap.to(batch, {
-  //         opacity: 1,
-  //         y: 0,
-  //         ease: "sine",
-  //         stagger: { each: 0.15, grid: [1, 5] },
-  //         overwrite: true,
-  //       }),
-  //     onLeave: (batch) => gsap.set(batch, { opacity: 1, y: 0, overwrite: true }),
-  //     onEnterBack: (batch) =>
-  //       gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15, overwrite: true }),
-  //     onLeaveBack: (batch) =>
-  //       gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
-  //   });
-  // }
-
-
-
-  // 1. تفعيل مكتبة Lenis لسكرول سلس
-  const lenis = new Lenis({
-    duration: 1.2,
-    smooth: true,
-    direction: "vertical",
-    gestureDirection: "vertical",
-    smoothTouch: false,
-    touchMultiplier: 2,
-  });
-
-  function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-  }
-  requestAnimationFrame(raf);
-
-  // 2. تحريك العناصر حسب data-speed (parallax scroll)
-  gsap.utils.toArray("[data-speed]").forEach((el) => {
-    const speed = parseFloat(el.getAttribute("data-speed"));
-
-    gsap.to(el, {
-      y: () => `${speed * 100}px`,
-      ease: "none",
-      scrollTrigger: {
-        trigger: el,
-        scrub: true,
-      },
-    });
-  });
-
-  // 3. تحريك العناصر التي تحتوي على .animate-in-up
-  gsap.utils.toArray(".animate-in-up").forEach((el) => {
-    gsap.fromTo(
-      el,
-      { opacity: 0, y: 40 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: el,
-          start: "top 120%",
-          // end: "bottom 20%",
-          toggleActions: "play none none reverse",
-        },
-      }
-    );
-  });
-
-  // 4. تحريك العناصر التي تحتوي على .animate-rotation حسب data-value
-  gsap.utils.toArray(".animate-rotation").forEach((el) => {
-    const rotationValue = parseFloat(el.getAttribute("data-value")) || 360;
-
-    gsap.to(el, {
-      rotation: rotationValue,
-      scrollTrigger: {
-        trigger: el,
-        scrub: true,
-      },
-    });
-  });
-
-  // 5. تحديث ScrollTrigger تلقائياً عند تغيير الحجم أو السحب
-  window.addEventListener("resize", () => ScrollTrigger.refresh());
-  lenis.on("scroll", ScrollTrigger.update);
-
-  // تفعيل GSAP و ScrollTrigger الأساسي للكروت والعناوين
-  gsap.registerPlugin(ScrollTrigger);
-
-  const headlineElements = document.querySelectorAll(".animate-headline");
-  const card2Elements = document.querySelectorAll(".animate-card-2");
-  const card3Elements = document.querySelectorAll(".animate-card-3");
-  const card5Elements = document.querySelectorAll(".animate-card-5");
-
-
-  if (headlineElements.length > 0) {
-    gsap.set(headlineElements, { y: 50, opacity: 0 });
-
-    ScrollTrigger.batch(headlineElements, {
+    gsap.set(".animate-headline", { y: 50, opacity: 0 });
+    ScrollTrigger.batch(".animate-headline", {
       interval: 0.1,
       batchMax: 4,
-      onEnter: (batch) =>
-        gsap.to(batch, {
-          opacity: 1,
-          y: 0,
-          ease: "sine",
-          stagger: { each: 0.15, grid: [1, 4] },
-          overwrite: true,
-        }),
-      onLeave: (batch) => gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
-      onEnterBack: (batch) =>
-        gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15, overwrite: true }),
-      onLeaveBack: (batch) =>
-        gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
+      duration: 6,
+      onEnter: batch => gsap.to(batch, {
+        opacity: 1,
+        y: 0,
+        ease: 'sine',
+        stagger: { each: 0.15, grid: [1, 4] },
+        overwrite: true
+      }),
+      onLeave: batch => gsap.set(batch, { opacity: 1, y: 0, overwrite: true }),
+      onEnterBack: batch => gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15, overwrite: true }),
+      onLeaveBack: batch => gsap.set(batch, { opacity: 0, y: 50, overwrite: true })
     });
+  });
+
+  const lenis = new Lenis()
+  function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
   }
+  requestAnimationFrame(raf)
 
+  gsap.to("[data-speed]", {
+    y: (i, el) => (1 - parseFloat(el.getAttribute("data-speed"))) * ScrollTrigger.maxScroll(window),
+    ease: "none",
+    scrollTrigger: {
+      start: 0,
+      end: "max",
+      invalidateOnRefresh: true,
+      scrub: 0
+    }
+  });
 
-  if (card2Elements.length > 0) {
-    gsap.set(card2Elements, { y: 100, opacity: 0 });
-
-    ScrollTrigger.batch(card2Elements, {
-      interval: 0.1,
-      batchMax: 2,
-      onEnter: (batch) =>
-        gsap.to(batch, {
-          opacity: 1,
-          y: 0,
-          ease: "sine",
-          stagger: { each: 0.15, grid: [1, 2] },
-          overwrite: true,
-        }),
-      onLeave: (batch) => gsap.set(batch, { opacity: 0, y: 100, overwrite: true }),
-      onEnterBack: (batch) =>
-        gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15, overwrite: true }),
-      onLeaveBack: (batch) =>
-        gsap.set(batch, { opacity: 0, y: 100, overwrite: true }),
+  const animateInUp = document.querySelectorAll(".animate-in-up");
+  animateInUp.forEach((element) => {
+    gsap.fromTo(element, {
+      opacity: 0,
+      y: 60,
+      ease: 'sine',
+    }, {
+      y: 0,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: element,
+        toggleActions: 'play none none reverse',
+      }
     });
-  }
+  });
 
-
-  if (card3Elements.length > 0) {
-    gsap.set(card3Elements, { y: 50, opacity: 0 });
-
-    ScrollTrigger.batch(card3Elements, {
-      interval: 0.1,
-      batchMax: 3,
-      onEnter: (batch) =>
-        gsap.to(batch, {
-          opacity: 1,
-          y: 0,
-          ease: "sine",
-          stagger: { each: 0.15, grid: [1, 3] },
-          overwrite: true,
-        }),
-      onLeave: (batch) => gsap.set(batch, { opacity: 1, y: 0, overwrite: true }),
-      onEnterBack: (batch) =>
-        gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15, overwrite: true }),
-      onLeaveBack: (batch) =>
-        gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
+  const animateRotation = document.querySelectorAll(".animate-rotation");
+  animateRotation.forEach((section) => {
+    var value = $(section).data("value");
+    gsap.fromTo(section, {
+      ease: 'sine',
+      rotate: 0,
+    }, {
+      rotate: value,
+      scrollTrigger: {
+        trigger: section,
+        scrub: true,
+        toggleActions: 'play none none reverse',
+      }
     });
-  }
+  });
 
+  gsap.set(".animate-card-2", { y: 100, opacity: 0 });
+  ScrollTrigger.batch(".animate-card-2", {
+    interval: 0.1,
+    batchMax: 2,
+    duration: 6,
+    onEnter: batch => gsap.to(batch, {
+      opacity: 1,
+      y: 0,
+      ease: 'sine',
+      stagger: { each: 0.15, grid: [1, 2] },
+      overwrite: true
+    }),
+    onLeave: batch => gsap.set(batch, { opacity: 1, y: 0, overwrite: true }),
+    onEnterBack: batch => gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15, overwrite: true }),
+    onLeaveBack: batch => gsap.set(batch, { opacity: 0, y: 100, overwrite: true })
+  });
 
-  if (card5Elements.length > 0) {
-    gsap.set(card5Elements, { y: 50, opacity: 0 });
+  gsap.set(".animate-card-3", { y: 50, opacity: 0 });
+  ScrollTrigger.batch(".animate-card-3", {
+    interval: 0.1,
+    batchMax: 3,
+    duration: 3,
+    onEnter: batch => gsap.to(batch, {
+      opacity: 1,
+      y: 0,
+      ease: 'sine',
+      stagger: { each: 0.15, grid: [1, 3] },
+      overwrite: true
+    }),
+    onLeave: batch => gsap.set(batch, { opacity: 1, y: 0, overwrite: true }),
+    onEnterBack: batch => gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15, overwrite: true }),
+    onLeaveBack: batch => gsap.set(batch, { opacity: 0, y: 50, overwrite: true })
+  });
 
-    ScrollTrigger.batch(card5Elements, {
-      interval: 0.1,
-      batchMax: 5,
-      delay: 0.5,
-      onEnter: (batch) =>
-        gsap.to(batch, {
-          opacity: 1,
-          y: 0,
-          ease: "sine",
-          stagger: { each: 0.15, grid: [1, 5] },
-          overwrite: true,
-        }),
-      onLeave: (batch) => gsap.set(batch, { opacity: 1, y: 0, overwrite: true }),
-      onEnterBack: (batch) =>
-        gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15, overwrite: true }),
-      onLeaveBack: (batch) =>
-        gsap.set(batch, { opacity: 0, y: 50, overwrite: true }),
-    });
-  }
+  gsap.set(".animate-card-5", { y: 50, opacity: 0 });
+  ScrollTrigger.batch(".animate-card-5", {
+    interval: 0.1,
+    batchMax: 5,
+    delay: 1000,
+    onEnter: batch => gsap.to(batch, {
+      opacity: 1,
+      y: 0,
+      ease: 'sine',
+      stagger: { each: 0.15, grid: [1, 5] },
+      overwrite: true
+    }),
+    onLeave: batch => gsap.set(batch, { opacity: 1, y: 0, overwrite: true }),
+    onEnterBack: batch => gsap.to(batch, { opacity: 1, y: 0, stagger: 0.15, overwrite: true }),
+    onLeaveBack: batch => gsap.set(batch, { opacity: 0, y: 50, overwrite: true })
+  });
 
-  // lenis.on("scroll", ScrollTrigger.update);
-
-  // // عند نهاية تحميل الصفحة تأكد من تحديث ScrollTrigger
-  // window.addEventListener("load", () => {
-  //   ScrollTrigger.refresh();
-
-  //   // أضف buffer بعد التحميل مباشرةً
-  //   const buffer = document.createElement("div");
-  //   buffer.style.height = "50vh";
-  //   buffer.style.opacity = "0";
-  //   buffer.style.pointerEvents = "none";
-  //   document.body.appendChild(buffer);
-
-  //   // تحديث ScrollTrigger بعد الإضافة
-  //   ScrollTrigger.refresh();
-  // });
-
-
-
+  ScrollTrigger.addEventListener("refreshInit", () => gsap.set(".animate-card-2", { y: 0, opacity: 1 }));
+  ScrollTrigger.addEventListener("refreshInit", () => gsap.set(".animate-card-3", { y: 0, opacity: 1 }));
+  ScrollTrigger.addEventListener("refreshInit", () => gsap.set(".animate-card-5", { y: 0, opacity: 1 }));
 
   $('a[href*="#"]')
     .not('[href="#"]')
@@ -767,11 +439,13 @@ $(function () {
 
   $(".gallery__link").each(function () {
     const imageUrl = $(this).data("image");
-    $(this).append(`<div class="picture" style="background-image: url(${imageUrl})"></div>`);
+    $(this).append(
+      `<div class="picture" style="background-image: url(${imageUrl})"></div>`
+    );
   });
+
+
 });
-
-
 
 const themeBtn = document.querySelector(".color-switcher");
 function getCurrentTheme() {
@@ -824,7 +498,8 @@ function toggleAccordion() {
 items.forEach((item) => item.addEventListener("click", toggleAccordion));
 
 document.addEventListener("DOMContentLoaded", function () {
-  const random = (min, max, direction = 1) => (min + (max - min) * Math.random()) * direction;
+  const random = (min, max, direction = 1) =>
+    (min + (max - min) * Math.random()) * direction;
 
   const blurs = gsap.utils.toArray(".blur");
   blurs.forEach((blur) => {
@@ -864,7 +539,10 @@ document.addEventListener("DOMContentLoaded", function () {
     new MutationObserver((mutations) => {
       mutations.forEach((mutation) => {
         mutation.addedNodes.forEach((node) => {
-          if (node.nodeName === "IMG" && node.getAttribute("data-uw-rm-ignore") !== null) {
+          if (
+            node.nodeName === "IMG" &&
+            node.getAttribute("data-uw-rm-ignore") !== null
+          ) {
             node.setAttribute("width", "1");
             node.setAttribute("height", "1");
           }
@@ -877,5 +555,9 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   document.head.appendChild(script);
 });
-
-
+// const originalWarn = console.warn;
+// console.warn = function(message) {
+//   if (!message.includes("GSAP target")) {
+//     originalWarn.apply(console, arguments);
+//   }
+// };

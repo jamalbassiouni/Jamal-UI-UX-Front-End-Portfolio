@@ -1,3 +1,6 @@
+/* style.css */
+/* @import url('https://unpkg.com/aos@2.3.4/dist/aos.css'); */
+
 :root {
   --_size: 1.6rem;
   --_font-default: "Syne", sans-serif;
@@ -1295,6 +1298,7 @@ p.small {
 
 @media only screen and (min-width: 992px) {
   .main {
+    height: -moz-calc(100vh - 2rem);
     height: calc(100vh - 2rem);
     padding: 0;
   }
@@ -1302,6 +1306,7 @@ p.small {
 
 @media only screen and (min-width: 1400px) {
   .main {
+    height: -moz-calc(100vh - 8rem);
     height: calc(100vh - 8rem);
   }
 }
@@ -1406,7 +1411,7 @@ p.small {
     margin-top: 0;
     position: absolute;
     right: 3rem;
-    bottom: 1rem;
+    bottom: -5rem;
   }
 
   .rotating-btn-footer {
@@ -1419,13 +1424,15 @@ p.small {
 
 @media only screen and (min-width: 1200px) {
   .rotating-btn {
+    bottom: -1rem;
+
     right: 6rem;
   }
 }
 
 @media only screen and (min-width: 1400px) {
   .rotating-btn {
-    bottom: -2rem;
+    bottom: -2.5rem;
     right: 8rem;
   }
 
@@ -2249,11 +2256,11 @@ p.small {
   }
 }
 
-@media only screen and (min-width: 725px) and (max-width: 992px) {
+/* @media only screen and (min-width: 725px) and (max-width: 992px) {
   .avatar__socials {
     padding: 0 11rem;
   }
-}
+} */
 
 .menu {
   padding: 0 0.4rem 0 0;
@@ -3449,7 +3456,7 @@ p.small {
   }
 }
 
-.popup {
+/* .popup {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -3468,6 +3475,29 @@ p.small {
 @media (max-width: 1024px) {
   .popup {
     display: none;
+  }
+} */
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 2.4rem;
+  border-radius: 1.2rem;
+  z-index: 13;
+  text-align: center;
+}
+
+.popup-text {
+  color: var(--t-per-bright-light);
+}
+
+@media (min-width: 1025px) {
+  .popup.show-popup {
+    display: block;
   }
 }
 

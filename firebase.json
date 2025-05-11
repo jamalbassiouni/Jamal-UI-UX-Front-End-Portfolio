@@ -41,10 +41,6 @@
           {
             "key": "Cache-Control",
             "value": "max-age=3600"
-          },
-          {
-            "key": "Content-Encoding",
-            "value": "gzip"
           }
         ]
       }
