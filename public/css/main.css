@@ -1823,7 +1823,7 @@ p.small {
   border-radius: 2rem;
   background-color: rgba(0, 0, 0, 0.03);
   backdrop-filter: blur(10px);
-  z-index: 10;
+  z-index: 11;
 }
 
 @media only screen and (min-width: 768px) {
@@ -3847,22 +3847,18 @@ img[data-src].lazyloaded {
   color: var(--t-bright);
 }
 
-@media only screen and (min-width: 360px) and (max-width: 406px) {
-  .blog-text {
-    height: 7rem;
-    overflow: hidden;
-  }
-}
-
-@media only screen and (min-width: 406px) and (max-width: 513px) {
-  .blog-text {
+@media only screen and (min-width: 360px) and (max-width: 513px),
+(min-width: 1200px) and (max-width: 1440px) {
+  .blog-text,
+  .blog-descr {
     height: 7rem;
     overflow: hidden;
   }
 }
 
 @media only screen and (min-width: 513px) and (max-width: 768px) {
-  .blog-text {
+  .blog-text,
+  .blog-descr {
     height: 5rem;
     overflow: hidden;
   }
@@ -3873,17 +3869,16 @@ img[data-src].lazyloaded {
     height: 7rem;
     overflow: hidden;
   }
-}
 
-@media only screen and (min-width: 1200px) and (max-width: 1440px) {
-  .blog-text {
-    height: 7rem;
+  .blog-descr {
+    height: 5rem;
     overflow: hidden;
   }
 }
 
 @media only screen and (min-width: 1400px) and (max-width: 1550px) {
-  .blog-text {
+  .blog-text,
+  .blog-descr {
     height: 8rem;
     overflow: hidden;
   }
@@ -3892,6 +3887,11 @@ img[data-src].lazyloaded {
 @media only screen and (min-width: 1550px) {
   .blog-text {
     height: 9.5rem;
+    overflow: hidden;
+  }
+
+  .blog-descr {
+    height: 6rem;
     overflow: hidden;
   }
 }
