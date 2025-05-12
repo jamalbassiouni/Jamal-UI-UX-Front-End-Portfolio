@@ -166,7 +166,7 @@ $(function () {
   animateInUp.forEach((element) => {
     gsap.fromTo(element, {
       opacity: 0,
-      y: 60,
+      y: 65,
       ease: 'sine',
     }, {
       y: 0,
@@ -325,8 +325,9 @@ $(function () {
       slidesPerView: 1,
       spaceBetween: 20,
       autoplay: {
-        delay: 3500,
+        delay: 4400,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
       },
       pagination: {
         el: ".swiper-pagination",
@@ -347,8 +348,9 @@ $(function () {
     const swiper = new Swiper(".swiper-blog", {
       spaceBetween: 20,
       autoplay: {
-        delay: 3500,
+        delay: 4400,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
       },
       grabCursor: true,
       speed: 1000,
@@ -555,9 +557,3 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   document.head.appendChild(script);
 });
-// const originalWarn = console.warn;
-// console.warn = function(message) {
-//   if (!message.includes("GSAP target")) {
-//     originalWarn.apply(console, arguments);
-//   }
-// };

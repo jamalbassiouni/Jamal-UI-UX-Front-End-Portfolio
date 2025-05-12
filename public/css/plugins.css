@@ -126,6 +126,11 @@ ul {
   --bs-gutter-y: 3rem;
 }
 
+.gy-5 {
+  --bs-gutter-y: 1.5rem;
+}
+
+
 @media (min-width: 768px) {
 
   .col-md-6 {
